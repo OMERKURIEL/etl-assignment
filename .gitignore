@@ -1,4 +1,12 @@
-venv/
+# Ignore Python cache files
 __pycache__/
 *.pyc
-*.log
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore IDE files
+.idea/
+
+# Ignore virtual environment
+venv/
