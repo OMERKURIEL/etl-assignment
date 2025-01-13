@@ -13,7 +13,7 @@ def calc_gc_content(sequence):
 
 def compute_codon_frequency(sequence):
     codon_freq = {}
-    for i in range(0, len(sequence), 3):
+    for i in range(0, len(sequence) - len(sequence) % 3, 3):
         if sequence[i:i+3] in codon_freq:
             codon_freq[sequence[i:i + 3]] += 1
         else:
@@ -37,18 +37,38 @@ def compute_longest_common_subsequence(sequences):
     if not sequences:
         return {"value": "", "sequences": [], "length": 0}
 
-    # split the sequences into codons:
-    codon_sequences = [
-        [sequence[i:i+3] for i in range(0, len(sequence) - len(sequence) % 3, 3)]
-        for sequence in sequences
-    ]
+    # Initialize the LCS as the first sequence
+    lcs = sequences[0]
+    sequence_indices = [1]  # Assume LCS appears in the first sequence (1-based index)
 
-    lcs = codon_sequences[0]
-    for codon in codon_sequences[1:]:
-        break
+    for i, sequence in enumerate(sequences[1:], start=2):
+        temp_lcs = ""
+        for j in range(len(lcs)):
+            for k in range(j + 1, len(lcs) + 1):
+                sub = lcs[j:k]
+                if sub in sequence and len(sub) > len(temp_lcs):
+                    temp_lcs = sub
+        lcs = temp_lcs
+        if lcs:
+            sequence_indices.append(i)
 
-    length = len(lcs)
+    return {"value": lcs, "sequences": sequence_indices, "length": len(lcs)}
 
+
+def find_lcs_between_two(lcs, sequence):
+    """
+    Find the longest common subsequence between two sequences.
+
+    :param lcs: The first sequence as a string, the current lcs
+    :param sequence: The second sequence as a string, the current sequence checked
+    :return: The lcs as a string.
+    """
+    while lcs:
+        if lcs in sequence:
+            return lcs  # Found lcs in the sequence
+        lcs = lcs[:-1]  # Shorten the lcs by removing the last character
+
+    return ""
 
 
 def process_txt_files(txt_file_path):
@@ -59,18 +79,14 @@ def process_txt_files(txt_file_path):
     with open(txt_file_path, 'r') as file:
         sequences = [line.strip() for line in file if line.strip()] # remove trailing and leading blanks
 
-    print(f"Processing {len(sequences)} sequences from TXT file: {txt_file_path}")
-
-    # initialize the returned variables
+    # initialize the returned variable
     sequence_results = []
-    aggregated_codon_frequency = {}
-    lcs_result = sequences[0] if sequences else ""
 
     # traverse through all sequences in the file and compute the per-sequence checks
     for idx, sequence in enumerate(sequences, start=1):
         # compute gc content and codons frequency
         gc_content = calc_gc_content(sequence)
-        codons_frequency = compute_most_frequent_codon(sequence)
+        codons_frequency = compute_codon_frequency(sequence)
         # append the result to the list
         sequence_results.append({"gc_content": gc_content,
                                  "codons": codons_frequency})
@@ -81,9 +97,9 @@ def process_txt_files(txt_file_path):
     return {
         "sequences": sequence_results,
         "most_common_codon": most_common_codon,
-        "lcs": {
+        "lcs":
             lcs_result
-        }
+
     }
 
 

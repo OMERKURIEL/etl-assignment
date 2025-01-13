@@ -10,11 +10,12 @@ def remove_sensitive_fields(data):
     :return: The same structure with sensitive fields removed.
     """
     if isinstance(data, dict):
-        cleaned_data = {}
-        for key, value in data.items():
-            if not key.startswith('_'):
-                cleaned_data[key] = remove_sensitive_fields(value)
-            return cleaned_data
+        return {
+            key: remove_sensitive_fields(value)
+            for key, value in data.items()
+            if not key.startswith('_')
+        }
+
     elif isinstance(data, list):
         return [remove_sensitive_fields(item) for item in data]
     else:
@@ -74,11 +75,44 @@ def validate_participants_age(data):
     """
     if "individual_metadata" in data and "date_of_birth" in data["individual_metadata"]:
         date_of_birth = datetime.strptime(data["individual_metadata"]["date_of_birth"], "%Y-%m-%d")
-        participants_age = (datetime.now() - date_of_birth) // 365
+        participants_age = (datetime.now() - date_of_birth).days // 365
         if participants_age < 40:
             raise ValueError(f"Participant's age '{participants_age}' is less than 40 years old.")
     else:
         raise ValueError("Missing 'individual_metadata' or 'date_of_birth'")
+
+
+
+
+def process_json_files(json_file_path):
+    """
+    Process and validate the JSON file specified in json_file_path.
+    """
+    print(f"Processing TXT file: {json_file_path}")
+    with open(json_file_path, 'r') as file:
+        data = json.load(file)
+    try:
+        print(f"Validating JSON file: {json_file_path}")
+        validate_fields_length(data)
+        validate_dates(data)
+        validate_participants_age(data)
+    except ValueError as e:
+        print(f"Validation error in {json_file_path}: {e}")
+        return # exit the pipeline
+    except Exception as e:
+        print(f"Unexpected error in {json_file_path}: {e}")
+
+    print(f"Processing JSON file: {json_file_path}")
+    data = remove_sensitive_fields(data)
+    with open(json_file_path, 'w') as file:
+        json.dump(data, file, indent=4)
+        print("JSON file validation and processing complete.")
+    return data
+
+
+
+
+
 
 
 
