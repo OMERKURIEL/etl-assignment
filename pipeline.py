@@ -1,9 +1,9 @@
 import os
 import sys
 import json
-import input_handler as input_handler
-import process_txt as txt
-import validate_and_process_json as json_validate
+from etl import input_handler as input_handler
+from etl import process_txt as txt
+from etl import validate_and_process_json as json_validate
 from datetime import datetime
 
 
@@ -36,15 +36,15 @@ def main():
 
         # Process the .txt file
         txt_results = txt.process_txt_files(participant_files[".txt"])
+
         # Process the .json file
         try:
             json_result = json_validate.process_json_files(participant_files[".json"])
             if json_result is None:
-                sys.exit(1) # if the processing fails, exit
+                sys.exit(1) # Exit if the processing fails
         except ValueError as e:
             print(f"Validation error in {participant_files['.json']}: {e}")
             sys.exit(1)
-
 
         # Extract the participant ID from the file name
         participant_id = os.path.splitext(os.path.basename(participant_files[".txt"]))[0]
