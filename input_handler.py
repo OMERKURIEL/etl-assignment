@@ -51,22 +51,35 @@ def validate_context_path_files(context_path, results_path):
         raise ValueError(f"Expected exactly 2 files in {context_path}, but found {len(files)}.")
 
     # Initialize a dictionary to store file paths
+    # initialize a set to validate the uuid id identical for both files
     participant_files = {}
+    participant_id_set = set()
 
     for file in files:
         # Validate file extension
         if not file.endswith(('.txt', '.json')):
             raise ValueError(f"Unsupported file extension found: {file}")
 
+        # validate file name format: {participant_id}_dna.txt or {participant_id}_dna.json
+        parts = file.split('_dna.')
+        if len(parts) != 2 or not parts[1] in (('txt', 'json')):
+            raise ValueError(f"Unsupported file extension found: {file}")
+
+
         # Extract UUID (participant_id) from the file name
-        participant_id, extension = os.path.splitext(file)
+        participant_id, extension = parts[0], f".{parts[1]}"
 
         # Validate the UUID
         if len(participant_id) != 36 or not all(c.isalnum() or c == '-' for c in participant_id):
             raise ValueError(f"Invalid participant ID in file name: {file}")
 
+        participant_id_set.add(participant_id)
+
         # Add the file to the dictionary
         participant_files[extension] = os.path.join(context_path, file)
+
+    if len(participant_id_set) != 1:
+        raise ValueError(f"Files in {context_path} do not share the same participant ID.")
 
     # Ensure both .txt and .json files are present
     if '.txt' not in participant_files or '.json' not in participant_files:

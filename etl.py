@@ -48,6 +48,8 @@ def main():
 
         # Extract the participant ID from the file name
         participant_id = os.path.splitext(os.path.basename(participant_files[".txt"]))[0]
+        if participant_id.endswith("_dna"):
+            participant_id = participant_id[:-4]
 
         # Merge the results
         merged_results = {

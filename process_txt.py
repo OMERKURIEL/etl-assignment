@@ -77,7 +77,8 @@ def process_txt_files(txt_file_path):
     """
     print(f"Processing TXT file: {txt_file_path}")
     with open(txt_file_path, 'r') as file:
-        sequences = [line.strip() for line in file if line.strip()] # remove trailing and leading blanks
+        # remove trailing and leading blanks
+        sequences = [line.strip() for line in file if line.strip()]
 
     # initialize the returned variable
     sequence_results = []
