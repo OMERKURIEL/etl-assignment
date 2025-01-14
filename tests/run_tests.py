@@ -4,7 +4,7 @@ import subprocess
 def run_test(test_name, input_json_path):
     print(f"Running Test: {test_name}")
     try:
-        subprocess.run(["python", "etl.py", input_json_path], check=True)
+        subprocess.run(["python", "pipeline.py", input_json_path], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Test {test_name} failed as expected with error:\n{e}")
     print("-" * 50)

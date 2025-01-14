@@ -2,10 +2,10 @@ import os
 
 def validate_and_load_input(input_data):
     """
-    Validates the input data, if valid, it returns it as two separate variables.
+    Validate input JSON and ensure paths are correct.
 
-    :param input_data: JSON-like input data with context_path and results_path.
-    :return: context_path, results_path
+    :param input_data: Parsed input JSON data.
+    :return: context_path, results_path.
     """
     try:
         context_path = input_data.get("context_path")
@@ -35,13 +35,16 @@ def validate_and_load_input(input_data):
 
 def validate_context_path_files(context_path, results_path):
     """
-    Validates the files in the context_path
-    Ensures the path contains both .txt and .json files with a valid UUID.
+    Validate the files in the context path and ensure proper naming conventions.
 
-    :param results_path:
-    :param context_path: Path to the directory containing the participant's files.
-    :return: A dictionary mapping file extensions (.txt, .json) to their file paths.
+    :param context_path: Directory containing participant files.
+    :param results_path: Directory to save output.
+    :return: Dictionary of validated file paths.
     """
+    # Initialize a dictionary to store file paths, and a set to validate the uuid id identical for both files
+    participant_files = {}
+    participant_id_set = set()
+
     # Get the list of files in the directory
     files = [
         file for file in os.listdir(context_path)
@@ -54,10 +57,6 @@ def validate_context_path_files(context_path, results_path):
     if len(files) != 2:
         raise ValueError(f"Expected exactly 2 files in {context_path}, but found {len(files)}.")
 
-    # Initialize a dictionary to store file paths
-    # initialize a set to validate the uuid id identical for both files
-    participant_files = {}
-    participant_id_set = set()
 
     for file in files:
         # Validate file extension

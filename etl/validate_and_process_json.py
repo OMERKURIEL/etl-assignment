@@ -108,7 +108,10 @@ def validate_participants_age(data):
 
 def process_json_files(json_file_path):
     """
-    Process and validate the JSON file specified in json_file_path.
+    Validate and clean metadata in the .json file.
+
+    :param json_file_path: Path to the .json file.
+    :return: Cleansed metadata.
     """
     with open(json_file_path, 'r') as file:
         data = json.load(file)
