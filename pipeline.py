@@ -6,6 +6,19 @@ from etl import process_txt as txt
 from etl import validate_and_process_json as json_validate
 from datetime import datetime
 
+import logging
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("etl_pipeline.log"),
+        logging.StreamHandler()
+    ]
+)
+
+
 def extract(input_json):
     """
     Extract input data and validate file paths.
@@ -13,22 +26,26 @@ def extract(input_json):
     :param input_json: Path to the input JSON file.
     :return: context_path, results_path, participant_files.
     """
+    logging.info("Starting the extract stage")
+
     # Raise an error if the input file doesn't exist
     if not os.path.exists(input_json):
+        logging.error(f"Input file not found: {input_json}")
         raise FileNotFoundError(f"Input file does not exist: {input_json}")
 
     # Load and parse the JSON file
     with open(input_json, 'r') as file:
         input_data = json.load(file)
+        logging.debug(f"Loaded input JSON: {input_data}")
 
     # Validate and load input paths
     context_path, results_path = input_handler.validate_and_load_input(input_data)
-    print("Input validation complete. Ready for ETL processing.")
+    logging.info(f"Validated paths: context_path={context_path}, results_path={results_path}")
 
     # validate there are exactly two files in the context path, they are in the expected format and names
     # and that they share the same uuid
     participant_files = input_handler.validate_context_path_files(context_path, results_path)
-    print(f"Validated participant files in: {context_path}")
+    logging.info(f"Validated participant files: {participant_files}")
 
     return context_path, results_path, participant_files
 
@@ -40,18 +57,27 @@ def transform(participant_files):
     :param participant_files: Dictionary mapping file extensions to file paths.
     :return: txt_results, json_result.
     """
+    logging.info("Starting the Transform stage.")
     # Process the .txt file
     txt_results = txt.process_txt_files(participant_files[".txt"])
+    logging.debug(f"Processed TXT results: {txt_results}")
 
     # Process and validate the content of the .json file
     try:
         json_result = json_validate.process_json_files(participant_files[".json"])
         if json_result is None:
+            logging.error("JSON processing failed.")
             sys.exit(1)  # Exit if the processing fails
+        logging.debug(f"Processed JSON results: {json_result}")
+
+        logging.info("Transform stage completed successfully.")
+        return txt_results, json_result
+
+
     except ValueError as e:
-        print(f"Validation error in {participant_files['.json']}: {e}")
+        logging.error(f"Validation error in {participant_files['.json']}: {e}")
         sys.exit(1)
-    return txt_results, json_result
+
 
 def load(context_path, results_path, txt_results, json_result, participant_files, start_time):
     """
@@ -64,6 +90,8 @@ def load(context_path, results_path, txt_results, json_result, participant_files
     :param participant_files: Dictionary mapping file extensions to file paths.
     :param start_time: Start time of processing the data
     """
+    logging.info("Starting the Load stage.")
+
     # Extract the participant ID from the file name
     participant_id = os.path.splitext(os.path.basename(participant_files[".txt"]))[0]
     if participant_id.endswith("_dna"):
@@ -92,36 +120,36 @@ def load(context_path, results_path, txt_results, json_result, participant_files
     with open(output_file_path, 'w') as output_file:
         json.dump(merged_results, output_file, indent=4)
 
-    print(f"Results for participant ID {participant_id} saved to {output_file_path}")
+    logging.info(f"Load stage completed successfully. Results saved to {output_file_path}")
 
 
 def main():
     try:
+        logging.info("ETL pipeline started.")
         start_time = datetime.now()
         # Check if the input JSON file is provided as a command-line argument
         if len(sys.argv) < 2:
+            logging.error("Input JSON file is required as an argument.")
             raise ValueError("Input JSON file is required as an argument.")
 
         input_json = sys.argv[1]
-
         # Validate that the provided file exists
         context_path, results_path, participant_files = extract(input_json)
-
         # Transform Stage
         txt_results, json_result = transform(participant_files)
         # Load stage
         load(context_path, results_path, txt_results, json_result, participant_files, start_time)
 
-        print("ETL pipeline completed successfully.")
+        logging.info("ETL pipeline completed successfully.")
 
     except ValueError as ve:
-        print(f"Validation Error: {ve}")
+        logging.error(f"Validation Error: {ve}")
         sys.exit(1)
     except FileNotFoundError as fnfe:
-        print(f"File Error: {fnfe}")
+        logging.error(f"File Error: {fnfe}")
         sys.exit(1)
     except Exception as e:
-        print(f"Unexpected Error: {e}")
+        logging.error(f"Unexpected Error: {e}")
         sys.exit(1)
 
 

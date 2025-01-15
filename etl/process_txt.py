@@ -93,6 +93,7 @@ def compute_longest_common_subsequence(sequences):
 
     max_lcs = ""
     max_indices = []
+    max_sequence_count = 0
 
     # Try all possible combinations of sequences
     for subset_size in range(2, len(sequences) + 1):
@@ -102,24 +103,43 @@ def compute_longest_common_subsequence(sequences):
             for i in range(1, len(combo)):
                 current_lcs = find_lcs_pair(current_lcs, sequences[combo[i]])
 
-            # Update if this is longer than our current max
-            if len(current_lcs) > len(max_lcs):
+                # Verify this LCS appears in all sequences in the combination
+            is_valid = True
+            for idx in combo:
+                if not is_subsequence(current_lcs, sequences[idx]):
+                    is_valid = False
+                    break
+
+            if not is_valid:
+                continue
+
+                # Update if this is a better solution
+                # Prefer more sequences when lengths are equal
+            if (len(current_lcs) > len(max_lcs)) or \
+                    (len(current_lcs) == len(max_lcs) and len(combo) > max_sequence_count):
                 max_lcs = current_lcs
                 max_indices = [i + 1 for i in combo]  # Convert to 1-based indexing
+                max_sequence_count = len(combo)
 
-    # If no common subsequence found, find the longest between any two sequences
-    if not max_indices:
-        for i, j in combinations(range(len(sequences)), 2):
-            current_lcs = find_lcs_pair(sequences[i], sequences[j])
-            if len(current_lcs) > len(max_lcs):
-                max_lcs = current_lcs
-                max_indices = [i + 1, j + 1]  # Convert to 1-based indexing
+        return {
+            "value": max_lcs,
+            "sequences": max_indices,
+            "length": len(max_lcs)
+        }
 
-    return {
-        "value": max_lcs,
-        "sequences": max_indices,
-        "length": len(max_lcs)
-    }
+
+def is_subsequence(shorter, longer):
+    """Check if shorter is a subsequence of longer."""
+    if not shorter:
+        return True
+
+    j = 0  # Index for shorter
+    for i in range(len(longer)):
+        if longer[i] == shorter[j]:
+            j += 1
+            if j == len(shorter):
+                return True
+    return False
 
 def process_sequence(sequence):
     """

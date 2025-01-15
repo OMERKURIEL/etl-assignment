@@ -1,5 +1,6 @@
 from datetime import datetime
 import json
+import logging
 
 
 def remove_sensitive_fields(data):
@@ -9,6 +10,7 @@ def remove_sensitive_fields(data):
     :param data: JSON-like object (dict or list).
     :return: The same structure with sensitive fields removed.
     """
+    logging.info("Starting sensitive fields removal")
     if isinstance(data, dict):
         return {
             key: remove_sensitive_fields(value)
@@ -28,6 +30,7 @@ def validate_fields_length(data):
     :param data: JSON-like object (dict or list).
     :raises ValueError: If any string field exceeds 64 characters.
     """
+    logging.info("Validating fields length")
     if isinstance(data, dict):
         for key, value in data.items():
             validate_fields_length(value)
@@ -36,55 +39,42 @@ def validate_fields_length(data):
             validate_fields_length(item)
     elif isinstance(data, str):
         if len(data) > 64:
+            logging.error(f"String '{data}' exceeds 64 characters")
             raise ValueError(f"String '{data}' exceeds 64 characters.")
 
 
-def validate_dates(data):
+
+def validate_dates(data, start_date=None, end_date=None, date_fields=None):
     """
     Validate that all dates in the JSON are within the range 2014-01-01 to 2024-12-31.
 
     :param data: JSON-like object (dict or list).
+    :param end_date: The earliest valid date (datetime object).
+    :param start_date: The latest valid date (datetime object).
+    :param date_fields: A set of fields expected to contain date values.
     :raises ValueError: If any date is out of range.
     """
-    # if isinstance(data, dict):
-    #     for key, value in data.items():
-    #         validate_dates(value)
-    #
-    # elif isinstance(data, list):
-    #     for date in data:
-    #         validate_dates(date)
-    #
-    # elif isinstance(data, str):
-    #     try:
-    #         # Try parsing the string as a date
-    #         date = datetime.strptime(data, "%Y-%m-%d")
-    #         if not (datetime(2014, 1, 1) <= date <= datetime(2024, 12, 31)):
-    #             raise ValueError(f"Date '{data}' is out of range.")
-    #     except ValueError:
-    #         # Ignore strings that aren't valid dates
-    #         pass
-    date_fields = {"date_requested", "date_completed", "collection_date"}
-
     if isinstance(data, dict):
         for key, value in data.items():
             if key in date_fields and isinstance(value, str):
                 try:
                     # Parse and validate the date
                     date = datetime.strptime(value, "%Y-%m-%d")
-                    if not (datetime(2014, 1, 1) <= date <= datetime(2024, 12, 31)):
+                    if not start_date <= date <= end_date:
+                        # Raise an error if the field is out of the expected range
                         raise ValueError(f"Date '{value}' in field '{key}' is out of range.")
                 except ValueError as e:
-                    # Raise an error only if it's a field we expect to be a date
+                    # Raise an error if the field is a date but not in the expected format
                     if "does not match format" in str(e):
                         raise ValueError(f"Invalid date format for field '{key}': '{value}'. Expected 'YYYY-MM-DD'.")
                     else:
                         raise
             elif isinstance(value, (dict, list)):
                 # Recursively validate nested structures
-                validate_dates(value)
+                validate_dates(value, start_date, end_date, date_fields)
     elif isinstance(data, list):
         for item in data:
-            validate_dates(item)
+            validate_dates(item, start_date, end_date, date_fields)
 
 
 
@@ -117,8 +107,14 @@ def process_json_files(json_file_path):
         data = json.load(file)
     try:
         print(f"Validating JSON file: {json_file_path}")
+
         validate_fields_length(data)
-        validate_dates(data)
+
+        start_date = datetime(2014, 1, 1)
+        end_date = datetime(2024, 12, 31)
+        date_fields = {"date_requested", "date_completed", "collection_date"}
+        validate_dates(data, start_date, end_date, date_fields)
+
         validate_participants_age(data)
     except ValueError as e:
         print(f"Validation error in {json_file_path}: {e}")
@@ -128,9 +124,7 @@ def process_json_files(json_file_path):
 
     print(f"Processing JSON file: {json_file_path}")
     data = remove_sensitive_fields(data)
-    with open(json_file_path, 'w') as file:
-        json.dump(data, file, indent=4)
-        print("JSON file validation and processing complete.")
+    print("JSON file validation and processing complete.")
     return data
 
 
