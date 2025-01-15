@@ -148,12 +148,17 @@ def main():
 
     except ValueError as ve:
         logging.error(f"Validation Error: {ve}")
+        logging.error("Pipeline exiting due to validation error")
         sys.exit(1)
+
     except FileNotFoundError as fnfe:
         logging.error(f"File Error: {fnfe}")
+        logging.error("Pipeline exiting due to validation error")
         sys.exit(1)
+
     except Exception as e:
-        logging.error(f"Unexpected Error: {e}")
+        logging.error(f"Unexpected Error: {e}", exc_info=True)
+        logging.error("Pipeline exiting due to an unexpected error")
         sys.exit(1)
 
 
