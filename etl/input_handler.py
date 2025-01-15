@@ -1,7 +1,5 @@
 import os
 import logging
-import uuid
-
 
 def validate_and_load_input(input_data):
     """
@@ -17,21 +15,23 @@ def validate_and_load_input(input_data):
 
         # validate context path is included in the input and exists
         if not context_path or not os.path.exists(context_path):
-            logging.error(f"Invalid or missing context_path: {context_path}")
+            logging.error(f"Invalid or missing context_path:")
             raise FileNotFoundError(f"Invalid or missing context path: {context_path}")
-        logging.info(f"Validated context path {context_path}")
 
         # validate result path is given in the input argument
         # if the result path doesn't already exist, create this directory
         if not results_path:
             logging.error("Results path is not specified")
             raise ValueError("Results path is not specified.")
+
         if not os.path.exists(results_path):
             logging.info(f"creating results directory at {results_path}")
             os.makedirs(results_path)
+
         if not results_path.endswith("/out/"):
-            logging.error(f"Results path does not end with '/out/': {results_path}")
+            logging.error(f"Results path does not end with '/out/'")
             raise ValueError("Results path does not end with '/out/'")
+
         if not results_path[:-4] == context_path:
             logging.error(f"Results path and context path must share the same base directory: "
                          f"context_path={context_path}, results_path={results_path} ")
@@ -42,7 +42,7 @@ def validate_and_load_input(input_data):
 
 
     except Exception as e:
-        logging.error(f"Input validation failed: {e}", exc_info=True)
+        logging.error(f"Input validation failed: {e}")
         raise
 
 def validate_context_path_files(context_path, results_path):
@@ -67,13 +67,15 @@ def validate_context_path_files(context_path, results_path):
 
     # Validate that only two files exist
     if len(files) != 2:
+        logging.error(f"Expected exactly 2 files in {context_path}, but found {len(files)}.")
         raise ValueError(f"Expected exactly 2 files in {context_path}, but found {len(files)}.")
 
 
     for file in files:
         # Validate file extension
         if not file.endswith(('.txt', '.json')):
-            raise ValueError(f"Unsupported file extension found: {file}")
+            logging.error(f"File {file} does not end with '.txt' or '.json'.")
+            raise ValueError(f"File {file} does not end with '.txt' or '.json'.")
 
         # Validate file naming convention: {participant_id}_dna.<extension>
         try:

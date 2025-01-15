@@ -26,26 +26,31 @@ def extract(input_json):
     :param input_json: Path to the input JSON file.
     :return: context_path, results_path, participant_files.
     """
-    logging.info("Starting the extract stage")
+    try:
+        logging.info("Starting the extract stage")
 
-    # Raise an error if the input file doesn't exist
-    if not os.path.exists(input_json):
-        logging.error(f"Input file not found: {input_json}")
-        raise FileNotFoundError(f"Input file does not exist: {input_json}")
+        # Raise an error if the input file doesn't exist
+        if not os.path.exists(input_json):
+            logging.error(f"Input file not found: {input_json}")
+            raise FileNotFoundError(f"Input file does not exist: {input_json}")
 
-    # Load and parse the JSON file
-    with open(input_json, 'r') as file:
-        input_data = json.load(file)
-        logging.debug(f"Loaded input JSON: {input_data}")
+        # Load and parse the JSON file
+        with open(input_json, 'r') as file:
+            input_data = json.load(file)
+            logging.debug(f"Loaded input JSON: {input_data}")
 
-    # Validate and load input paths
-    context_path, results_path = input_handler.validate_and_load_input(input_data)
-    logging.info(f"Validated paths: context_path={context_path}, results_path={results_path}")
+        # Validate and load input paths
+        context_path, results_path = input_handler.validate_and_load_input(input_data)
+        logging.info(f"Validated paths: context_path={context_path}, results_path={results_path}")
 
-    # validate there are exactly two files in the context path, they are in the expected format and names
-    # and that they share the same uuid
-    participant_files = input_handler.validate_context_path_files(context_path, results_path)
-    logging.info(f"Validated participant files: {participant_files}")
+        # validate there are exactly two files in the context path, they are in the expected format and names
+        # and that they share the same uuid
+        participant_files = input_handler.validate_context_path_files(context_path, results_path)
+        logging.info(f"Validated participant files: {participant_files}")
+    except ValueError:
+        logging.error("Exiting the pipeline due to validation error")
+        sys.exit(1)
+
 
     return context_path, results_path, participant_files
 
@@ -73,9 +78,8 @@ def transform(participant_files):
         logging.info("Transform stage completed successfully.")
         return txt_results, json_result
 
-
-    except ValueError as e:
-        logging.error(f"Validation error in {participant_files['.json']}: {e}")
+    except ValueError:
+        logging.error("Exiting the pipeline due to validation error")
         sys.exit(1)
 
 

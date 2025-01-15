@@ -1,5 +1,6 @@
 from multiprocessing import Pool, cpu_count
 from itertools import combinations
+import logging
 
 
 def calc_gc_content(sequence):
@@ -9,6 +10,7 @@ def calc_gc_content(sequence):
     :param sequence: A string representing the DNA sequence.
     :return: GC content percentage, rounded to two decimal places.
     """
+    logging.debug("Calculating GC content.")
     length = len(sequence)
     count_c = 0
     count_g = 0
@@ -17,7 +19,9 @@ def calc_gc_content(sequence):
             count_c += 1
         if char == 'G':
             count_g += 1
-    return round((100 * (count_c + count_g)) / length, 2)
+    gc_content = round((100 * (count_c + count_g)) / length, 2)
+    logging.debug("GC content of DNA sequence is %f.", gc_content)
+    return gc_content
 
 def compute_codon_frequency(sequence):
     """
@@ -26,12 +30,14 @@ def compute_codon_frequency(sequence):
     :param sequence: A string representing the DNA sequence.
     :return: A dictionary with codons as keys and their frequencies as values.
     """
+    logging.debug("Computing codon frequency.")
     codon_freq = {}
     for i in range(0, len(sequence) - len(sequence) % 3, 3):
         if sequence[i:i+3] in codon_freq:
             codon_freq[sequence[i:i + 3]] += 1
         else:
             codon_freq[sequence[i:i + 3]] = 1
+    logging.debug(f"Codon frequency: {codon_freq}")
     return codon_freq
 
 def compute_most_frequent_codon(sequences):
@@ -41,6 +47,7 @@ def compute_most_frequent_codon(sequences):
     :param sequences: A list of strings, each representing a DNA sequence.
     :return: The most frequent codon as a string.
     """
+    logging.debug("Computing longest common subsequence (LCS).")
     total_codon_count = {}
     for sequence in sequences:
         # Use compute_codon_frequency to calculate frequency per sequence
@@ -150,7 +157,7 @@ def process_sequence(sequence):
         - "gc_content": The GC content percentage of the sequence.
         - "codons": A dictionary where keys are codons (triplets) and values are their frequencies.
     """
-
+    logging.debug("Processing individual sequence.")
     gc_content = calc_gc_content(sequence)
     codons_frequency = compute_codon_frequency(sequence)
     return {"gc_content": gc_content, "codons": codons_frequency}
@@ -163,10 +170,11 @@ def process_txt_files(txt_file_path):
     :param txt_file_path: Path to the .txt file.
     :return: Processed results including GC content, codon frequency, and LCS.
     """
-    print(f"Processing TXT file: {txt_file_path}")
-    with open(txt_file_path, 'r') as file:
-        # remove trailing and leading blanks
+    logging.info(f"Processing TXT file: {txt_file_path}")
+    with open(txt_file_path, 'r') as file: # remove trailing and leading blanks
         sequences = [line.strip() for line in file if line.strip()]
+
+    logging.debug(f"Read {len(sequences)} sequences from {txt_file_path}")
 
     # Use multiprocessing to process sequences in parallel
     with Pool(processes=cpu_count()) as pool:
@@ -176,6 +184,7 @@ def process_txt_files(txt_file_path):
     most_common_codon = compute_most_frequent_codon(sequences)
     lcs_result = compute_longest_common_subsequence(sequences)
 
+    logging.info("Completed processing TXT file.")
     return {
         "sequences": sequence_results,
         "most_common_codon": most_common_codon,

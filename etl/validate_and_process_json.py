@@ -10,7 +10,6 @@ def remove_sensitive_fields(data):
     :param data: JSON-like object (dict or list).
     :return: The same structure with sensitive fields removed.
     """
-    logging.info("Starting sensitive fields removal")
     if isinstance(data, dict):
         return {
             key: remove_sensitive_fields(value)
@@ -30,7 +29,6 @@ def validate_fields_length(data):
     :param data: JSON-like object (dict or list).
     :raises ValueError: If any string field exceeds 64 characters.
     """
-    logging.info("Validating fields length")
     if isinstance(data, dict):
         for key, value in data.items():
             validate_fields_length(value)
@@ -60,17 +58,17 @@ def validate_dates(data, start_date=None, end_date=None, date_fields=None):
                 try:
                     # Parse and validate the date
                     date = datetime.strptime(value, "%Y-%m-%d")
-                    if not start_date <= date <= end_date:
-                        # Raise an error if the field is out of the expected range
+                    if not start_date <= date <= end_date:  # Raise an error if the field is out of the expected range
+                        logging.error(f"Date '{value}' in field '{key}' is out of range.")
                         raise ValueError(f"Date '{value}' in field '{key}' is out of range.")
+
                 except ValueError as e:
-                    # Raise an error if the field is a date but not in the expected format
-                    if "does not match format" in str(e):
+                    if "does not match format" in str(e): # Raise an error if date is not in the expected format
+                        logging.error(f"invalid date format for field '{key}': {value}. Expected 'YYYY-MM-DD'.")
                         raise ValueError(f"Invalid date format for field '{key}': '{value}'. Expected 'YYYY-MM-DD'.")
                     else:
                         raise
-            elif isinstance(value, (dict, list)):
-                # Recursively validate nested structures
+            elif isinstance(value, (dict, list)): # Recursively validate nested structures
                 validate_dates(value, start_date, end_date, date_fields)
     elif isinstance(data, list):
         for item in data:
@@ -86,13 +84,18 @@ def validate_participants_age(data):
     :raises ValueError: If the participant's age is < 40.
     """
     if "individual_metadata" in data and "date_of_birth" in data["individual_metadata"]:
-        date_of_birth = datetime.strptime(data["individual_metadata"]["date_of_birth"], "%Y-%m-%d")
-        participants_age = (datetime.now() - date_of_birth).days // 365
-        if participants_age < 40:
-            raise ValueError(f"Participant's age '{participants_age}' is less than 40 years old.")
-    else:
-        raise ValueError("Missing 'individual_metadata' or 'date_of_birth'")
+        try:
+            date_of_birth = datetime.strptime(data["individual_metadata"]["date_of_birth"], "%Y-%m-%d")
+            participants_age = (datetime.now() - date_of_birth).days // 365
+            if participants_age < 40:
+                logging.error(f"Participant's age '{participants_age}' is less than 40 years old.")
+                raise ValueError(f"Participant's age '{participants_age}' is less than 40 years old.")
+        except Exception:
+            raise
 
+    else:
+        logging.error(f"Missing 'individual_metadata' or 'date_of_birth' field.")
+        raise ValueError("Missing 'individual_metadata' or 'date_of_birth'")
 
 
 
@@ -106,25 +109,25 @@ def process_json_files(json_file_path):
     with open(json_file_path, 'r') as file:
         data = json.load(file)
     try:
-        print(f"Validating JSON file: {json_file_path}")
+        logging.info(f"Validating JSON file: {json_file_path}")
 
+        logging.debug("Validating fields length")
         validate_fields_length(data)
 
         start_date = datetime(2014, 1, 1)
         end_date = datetime(2024, 12, 31)
         date_fields = {"date_requested", "date_completed", "collection_date"}
+        logging.debug("Validating dates.")
         validate_dates(data, start_date, end_date, date_fields)
 
+        logging.debug("Validating participant's age.")
         validate_participants_age(data)
-    except ValueError as e:
-        print(f"Validation error in {json_file_path}: {e}")
-        return # exit the pipeline
-    except Exception as e:
-        print(f"Unexpected error in {json_file_path}: {e}")
 
-    print(f"Processing JSON file: {json_file_path}")
+    except Exception as e:
+        raise
+
     data = remove_sensitive_fields(data)
-    print("JSON file validation and processing complete.")
+    logging.info("JSON file validation and processing complete.")
     return data
 
 
