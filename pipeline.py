@@ -9,13 +9,12 @@ from datetime import datetime
 import logging
 
 # Configure logging
+import logging
+import sys
+
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("etl_pipeline.log"),
-        logging.StreamHandler()
-    ]
+    format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
 
@@ -43,16 +42,15 @@ def extract(input_json):
         context_path, results_path = input_handler.validate_and_load_input(input_data)
         logging.info(f"Validated paths: context_path={context_path}, results_path={results_path}")
 
-        # validate there are exactly two files in the context path, they are in the expected format and names
-        # and that they share the same uuid
+        # validate the files existence, format, naming in the context path
         participant_files = input_handler.validate_context_path_files(context_path, results_path)
         logging.info(f"Validated participant files: {participant_files}")
     except ValueError:
         logging.error("Exiting the pipeline due to validation error")
         sys.exit(1)
 
-
     return context_path, results_path, participant_files
+
 
 def transform(participant_files):
     """
@@ -63,24 +61,25 @@ def transform(participant_files):
     :return: txt_results, json_result.
     """
     logging.info("Starting the Transform stage.")
-    # Process the .txt file
-    txt_results = txt.process_txt_files(participant_files[".txt"])
-    logging.debug(f"Processed TXT results: {txt_results}")
-
-    # Process and validate the content of the .json file
+    # Validate and process the content of the .json file
     try:
         json_result = json_validate.process_json_files(participant_files[".json"])
         if json_result is None:
             logging.error("JSON processing failed.")
             sys.exit(1)  # Exit if the processing fails
-        logging.debug(f"Processed JSON results: {json_result}")
 
+        logging.debug(f"Processed JSON results: {json_result}")
         logging.info("Transform stage completed successfully.")
-        return txt_results, json_result
 
     except ValueError:
         logging.error("Exiting the pipeline due to validation error")
         sys.exit(1)
+
+    # Process the .txt file
+    txt_results = txt.process_txt_files(participant_files[".txt"])
+    logging.debug(f"Processed TXT results: {txt_results}")
+
+    return txt_results, json_result
 
 
 def load(context_path, results_path, txt_results, json_result, participant_files, start_time):
@@ -105,7 +104,7 @@ def load(context_path, results_path, txt_results, json_result, participant_files
     merged_results = {
         "metadata": {
             "start_at": start_time.isoformat(),
-            "end_at": datetime.now().isoformat(),
+            "end_at": datetime.now().isoformat(), # I need to change this
             "context_path": context_path,
             "results_path": results_path
         },

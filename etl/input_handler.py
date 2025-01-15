@@ -47,7 +47,8 @@ def validate_and_load_input(input_data):
 
 def validate_context_path_files(context_path, results_path):
     """
-    Validate the files in the context path and ensure proper naming conventions.
+    Validate there are exactly two files in the context path, ensure naming conventions.
+
 
     :param context_path: Directory containing participant files.
     :param results_path: Directory to save output.

@@ -103,7 +103,7 @@ def compute_longest_common_subsequence(sequences):
     max_sequence_count = 0
 
     # Try all possible combinations of sequences
-    for subset_size in range(2, len(sequences) + 1):
+    for subset_size in range(2,3):
         for combo in combinations(range(len(sequences)), subset_size):
             # Find LCS for current combination
             current_lcs = sequences[combo[0]]
@@ -119,14 +119,18 @@ def compute_longest_common_subsequence(sequences):
 
             if not is_valid:
                 continue
-
                 # Update if this is a better solution
                 # Prefer more sequences when lengths are equal
             if (len(current_lcs) > len(max_lcs)) or \
                     (len(current_lcs) == len(max_lcs) and len(combo) > max_sequence_count):
                 max_lcs = current_lcs
-                max_indices = [i + 1 for i in combo]  # Convert to 1-based indexing
                 max_sequence_count = len(combo)
+
+
+        max_indices = []
+        for idx, sequence in enumerate(sequences):
+            if max_lcs in sequence:
+                max_indices.append(idx+1)
 
         return {
             "value": max_lcs,
@@ -147,6 +151,7 @@ def is_subsequence(shorter, longer):
             if j == len(shorter):
                 return True
     return False
+
 
 def process_sequence(sequence):
     """
@@ -178,7 +183,7 @@ def process_txt_files(txt_file_path):
 
     # Use multiprocessing to process sequences in parallel
     with Pool(processes=cpu_count()) as pool:
-        sequence_results = pool.map(process_sequence, sequences)
+        sequences_results = pool.map(process_sequence, sequences)
 
     # compute most common codon and lcs
     most_common_codon = compute_most_frequent_codon(sequences)
@@ -186,7 +191,7 @@ def process_txt_files(txt_file_path):
 
     logging.info("Completed processing TXT file.")
     return {
-        "sequences": sequence_results,
+        "sequences": sequences_results,
         "most_common_codon": most_common_codon,
         "lcs":
             lcs_result
