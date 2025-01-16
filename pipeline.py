@@ -1,12 +1,7 @@
 import os
-import sys
 import json
-from etl import input_handler as input_handler
-from etl import process_txt as txt
-from etl import validate_and_process_json as json_validate
+from etl import validate_and_process_json as json_validate, input_handler as input_handler, process_txt as txt
 from datetime import datetime
-
-import logging
 
 # Configure logging
 import logging
