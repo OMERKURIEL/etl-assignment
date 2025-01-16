@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.app-container {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #0033cc;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers buttons */
+    gap: 15px; /* Adds space between buttons */
+    margin-top: 10px;
+}
+
+
+button, .custom-file-upload {
+    flex: 1; /* Makes all buttons the same size */
+    max-width: 150px;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0033cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0 20px;
+}
+
+button:hover, .custom-file-upload:hover {
+    background-color: #130080;
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.upload-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;  /* Aligns logs to the left */
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+/* Logs and Results Formatting */
+pre {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}

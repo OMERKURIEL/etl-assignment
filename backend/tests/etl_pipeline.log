@@ -1,0 +1,1800 @@
+2025-01-16 19:13:57,999 - INFO - ETL pipeline started.
+2025-01-16 19:13:57,999 - INFO - Starting the extract stage
+2025-01-16 19:13:57,999 - INFO - Validating input JSON structure.
+2025-01-16 19:13:57,999 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:13:57,999 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:13:57,999 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:13:57,999 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:13:57,999 - INFO - Starting the Transform stage.
+2025-01-16 19:13:57,999 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:13:58,002 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:13:58,002 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,029 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,029 - INFO - Starting the extract stage
+2025-01-16 19:13:58,029 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,029 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:13:58,030 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:13:58,030 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:13:58,030 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:13:58,030 - INFO - Starting the Transform stage.
+2025-01-16 19:13:58,030 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:13:58,031 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:13:58,031 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,059 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,059 - INFO - Starting the extract stage
+2025-01-16 19:13:58,059 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,059 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:13:58,059 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:13:58,059 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:13:58,059 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:13:58,059 - INFO - Starting the Transform stage.
+2025-01-16 19:13:58,059 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:13:58,059 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:13:58,059 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,085 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,085 - INFO - Starting the extract stage
+2025-01-16 19:13:58,086 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,086 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:13:58,086 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:13:58,086 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:13:58,086 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,113 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,113 - INFO - Starting the extract stage
+2025-01-16 19:13:58,113 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,113 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:13:58,113 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:13:58,113 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:13:58,113 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,140 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,140 - INFO - Starting the extract stage
+2025-01-16 19:13:58,140 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,140 - ERROR - Invalid or missing context_path:
+2025-01-16 19:13:58,140 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:13:58,141 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:13:58,141 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:13:58,168 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,168 - INFO - Starting the extract stage
+2025-01-16 19:13:58,169 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,169 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:13:58,169 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:13:58,169 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:13:58,169 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,195 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,195 - INFO - Starting the extract stage
+2025-01-16 19:13:58,195 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,195 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:13:58,195 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:13:58,195 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,223 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,223 - INFO - Starting the extract stage
+2025-01-16 19:13:58,223 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,223 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:13:58,223 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:13:58,223 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:13:58,249 - INFO - ETL pipeline started.
+2025-01-16 19:13:58,249 - INFO - Starting the extract stage
+2025-01-16 19:13:58,250 - INFO - Validating input JSON structure.
+2025-01-16 19:13:58,250 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:13:58,250 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:13:58,250 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:13:58,250 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:13:58,250 - INFO - Starting the Transform stage.
+2025-01-16 19:13:58,250 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:13:58,252 - INFO - JSON file validation and processing complete.
+2025-01-16 19:13:58,252 - INFO - Transform stage completed successfully.
+2025-01-16 19:13:58,252 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:13:58,343 - INFO - Completed processing TXT file.
+2025-01-16 19:13:58,344 - INFO - Starting the Load stage.
+2025-01-16 19:13:58,345 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:13:58,345 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:14:07,659 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,660 - INFO - Starting the extract stage
+2025-01-16 19:14:07,660 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,660 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:14:07,660 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:14:07,660 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:14:07,660 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:14:07,660 - INFO - Starting the Transform stage.
+2025-01-16 19:14:07,660 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:14:07,662 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:14:07,662 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,692 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,692 - INFO - Starting the extract stage
+2025-01-16 19:14:07,693 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,693 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:14:07,693 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:14:07,693 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:14:07,693 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:14:07,693 - INFO - Starting the Transform stage.
+2025-01-16 19:14:07,693 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:14:07,695 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:14:07,695 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,724 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,724 - INFO - Starting the extract stage
+2025-01-16 19:14:07,725 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,725 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:14:07,725 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:14:07,725 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:14:07,725 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:14:07,725 - INFO - Starting the Transform stage.
+2025-01-16 19:14:07,725 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:14:07,725 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:14:07,725 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,752 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,752 - INFO - Starting the extract stage
+2025-01-16 19:14:07,752 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,752 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:14:07,752 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:14:07,752 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:14:07,752 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,779 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,779 - INFO - Starting the extract stage
+2025-01-16 19:14:07,779 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,779 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:14:07,779 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:14:07,779 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:14:07,779 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,805 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,805 - INFO - Starting the extract stage
+2025-01-16 19:14:07,805 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,805 - ERROR - Invalid or missing context_path:
+2025-01-16 19:14:07,805 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:14:07,805 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:14:07,805 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:14:07,835 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,835 - INFO - Starting the extract stage
+2025-01-16 19:14:07,836 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,836 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:14:07,836 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:14:07,836 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:14:07,836 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,862 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,862 - INFO - Starting the extract stage
+2025-01-16 19:14:07,863 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,863 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:14:07,863 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:14:07,863 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,889 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,889 - INFO - Starting the extract stage
+2025-01-16 19:14:07,890 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,890 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:14:07,890 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:14:07,890 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:14:07,915 - INFO - ETL pipeline started.
+2025-01-16 19:14:07,916 - INFO - Starting the extract stage
+2025-01-16 19:14:07,916 - INFO - Validating input JSON structure.
+2025-01-16 19:14:07,916 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:14:07,916 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:14:07,916 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:14:07,916 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:14:07,916 - INFO - Starting the Transform stage.
+2025-01-16 19:14:07,916 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:14:07,918 - INFO - JSON file validation and processing complete.
+2025-01-16 19:14:07,918 - INFO - Transform stage completed successfully.
+2025-01-16 19:14:07,918 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:14:08,011 - INFO - Completed processing TXT file.
+2025-01-16 19:14:08,011 - INFO - Starting the Load stage.
+2025-01-16 19:14:08,012 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:14:08,012 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:15:25,925 - INFO - ETL pipeline started.
+2025-01-16 19:15:25,926 - INFO - Starting the extract stage
+2025-01-16 19:15:25,926 - INFO - Validating input JSON structure.
+2025-01-16 19:15:25,926 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:15:25,926 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:15:25,927 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:15:25,927 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:15:25,927 - INFO - Starting the Transform stage.
+2025-01-16 19:15:25,927 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:15:25,929 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:15:25,929 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:25,959 - INFO - ETL pipeline started.
+2025-01-16 19:15:25,959 - INFO - Starting the extract stage
+2025-01-16 19:15:25,959 - INFO - Validating input JSON structure.
+2025-01-16 19:15:25,959 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:15:25,959 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:15:25,959 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:15:25,959 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:15:25,959 - INFO - Starting the Transform stage.
+2025-01-16 19:15:25,959 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:15:25,961 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:15:25,961 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:25,988 - INFO - ETL pipeline started.
+2025-01-16 19:15:25,988 - INFO - Starting the extract stage
+2025-01-16 19:15:25,988 - INFO - Validating input JSON structure.
+2025-01-16 19:15:25,988 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:15:25,988 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:15:25,988 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:15:25,988 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:15:25,988 - INFO - Starting the Transform stage.
+2025-01-16 19:15:25,988 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:15:25,988 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:15:25,988 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:26,016 - INFO - ETL pipeline started.
+2025-01-16 19:15:26,016 - INFO - Starting the extract stage
+2025-01-16 19:15:26,016 - INFO - Validating input JSON structure.
+2025-01-16 19:15:26,016 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:15:26,016 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:15:26,017 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:15:26,017 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:26,042 - INFO - ETL pipeline started.
+2025-01-16 19:15:26,042 - INFO - Starting the extract stage
+2025-01-16 19:15:26,042 - INFO - Validating input JSON structure.
+2025-01-16 19:15:26,042 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:15:26,042 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:15:26,042 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:15:26,042 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:26,069 - INFO - ETL pipeline started.
+2025-01-16 19:15:26,069 - INFO - Starting the extract stage
+2025-01-16 19:15:26,069 - INFO - Validating input JSON structure.
+2025-01-16 19:15:26,069 - ERROR - Invalid or missing context_path:
+2025-01-16 19:15:26,069 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:15:26,069 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:15:26,069 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:15:26,097 - INFO - ETL pipeline started.
+2025-01-16 19:15:26,097 - INFO - Starting the extract stage
+2025-01-16 19:15:26,097 - INFO - Validating input JSON structure.
+2025-01-16 19:15:26,097 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:15:26,097 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:15:26,097 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:15:26,097 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:26,124 - INFO - ETL pipeline started.
+2025-01-16 19:15:26,124 - INFO - Starting the extract stage
+2025-01-16 19:15:26,124 - INFO - Validating input JSON structure.
+2025-01-16 19:15:26,124 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:15:26,124 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:15:26,124 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:26,153 - INFO - ETL pipeline started.
+2025-01-16 19:15:26,153 - INFO - Starting the extract stage
+2025-01-16 19:15:26,153 - INFO - Validating input JSON structure.
+2025-01-16 19:15:26,153 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:15:26,153 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:15:26,153 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:15:26,179 - INFO - ETL pipeline started.
+2025-01-16 19:15:26,179 - INFO - Starting the extract stage
+2025-01-16 19:15:26,179 - INFO - Validating input JSON structure.
+2025-01-16 19:15:26,179 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:15:26,179 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:15:26,179 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:15:26,179 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:15:26,179 - INFO - Starting the Transform stage.
+2025-01-16 19:15:26,179 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:15:26,181 - INFO - JSON file validation and processing complete.
+2025-01-16 19:15:26,181 - INFO - Transform stage completed successfully.
+2025-01-16 19:15:26,181 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:15:26,269 - INFO - Completed processing TXT file.
+2025-01-16 19:15:26,269 - INFO - Starting the Load stage.
+2025-01-16 19:15:26,270 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:15:26,270 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:17:50,722 - INFO - Running Test: Under 40 Years Old
+2025-01-16 19:17:50,754 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,754 - INFO - Starting the extract stage
+2025-01-16 19:17:50,755 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,755 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:17:50,755 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:17:50,755 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:17:50,755 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:17:50,755 - INFO - Starting the Transform stage.
+2025-01-16 19:17:50,755 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:17:50,757 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:17:50,757 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,761 - INFO - Test Under 40 Years Old failed as expected with error: 2025-01-16 19:17:50,754 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,754 - INFO - Starting the extract stage
+2025-01-16 19:17:50,755 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,755 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:17:50,755 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:17:50,755 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:17:50,755 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:17:50,755 - INFO - Starting the Transform stage.
+2025-01-16 19:17:50,755 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:17:50,757 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:17:50,757 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,761 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,761 - INFO - Running Test: Dates Out of Range
+2025-01-16 19:17:50,785 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,786 - INFO - Starting the extract stage
+2025-01-16 19:17:50,786 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,786 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:17:50,786 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:17:50,786 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:17:50,786 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:17:50,786 - INFO - Starting the Transform stage.
+2025-01-16 19:17:50,786 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:17:50,788 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:17:50,788 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,791 - INFO - Test Dates Out of Range failed as expected with error: 2025-01-16 19:17:50,785 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,786 - INFO - Starting the extract stage
+2025-01-16 19:17:50,786 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,786 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:17:50,786 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:17:50,786 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:17:50,786 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:17:50,786 - INFO - Starting the Transform stage.
+2025-01-16 19:17:50,786 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:17:50,788 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:17:50,788 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,791 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,791 - INFO - Running Test: Fields Exceed Length
+2025-01-16 19:17:50,813 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,813 - INFO - Starting the extract stage
+2025-01-16 19:17:50,813 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,813 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:17:50,813 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:17:50,813 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:17:50,813 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:17:50,813 - INFO - Starting the Transform stage.
+2025-01-16 19:17:50,813 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:17:50,813 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:17:50,813 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,816 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 19:17:50,813 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,813 - INFO - Starting the extract stage
+2025-01-16 19:17:50,813 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,813 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:17:50,813 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:17:50,813 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:17:50,813 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:17:50,813 - INFO - Starting the Transform stage.
+2025-01-16 19:17:50,813 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:17:50,813 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:17:50,813 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,817 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,817 - INFO - Running Test: Invalid UUID
+2025-01-16 19:17:50,839 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,839 - INFO - Starting the extract stage
+2025-01-16 19:17:50,839 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,839 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:17:50,839 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:17:50,839 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:17:50,839 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,842 - INFO - Test Invalid UUID failed as expected with error: 2025-01-16 19:17:50,839 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,839 - INFO - Starting the extract stage
+2025-01-16 19:17:50,839 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,839 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:17:50,839 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:17:50,839 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:17:50,839 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,842 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,842 - INFO - Running Test: Missing File
+2025-01-16 19:17:50,866 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,866 - INFO - Starting the extract stage
+2025-01-16 19:17:50,866 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,867 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:17:50,867 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:17:50,867 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:17:50,867 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,870 - INFO - Test Missing File failed as expected with error: 2025-01-16 19:17:50,866 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,866 - INFO - Starting the extract stage
+2025-01-16 19:17:50,866 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,867 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:17:50,867 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:17:50,867 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:17:50,867 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,870 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,870 - INFO - Running Test: Missing context_path
+2025-01-16 19:17:50,892 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,892 - INFO - Starting the extract stage
+2025-01-16 19:17:50,892 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,892 - ERROR - Invalid or missing context_path:
+2025-01-16 19:17:50,893 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:17:50,893 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:17:50,893 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:17:50,896 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 19:17:50,892 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,892 - INFO - Starting the extract stage
+2025-01-16 19:17:50,892 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,892 - ERROR - Invalid or missing context_path:
+2025-01-16 19:17:50,893 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:17:50,893 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:17:50,893 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:17:50,896 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,896 - INFO - Running Test: Extra Files
+2025-01-16 19:17:50,918 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,918 - INFO - Starting the extract stage
+2025-01-16 19:17:50,918 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,918 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:17:50,918 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:17:50,918 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:17:50,918 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,922 - INFO - Test Extra Files failed as expected with error: 2025-01-16 19:17:50,918 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,918 - INFO - Starting the extract stage
+2025-01-16 19:17:50,918 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,918 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:17:50,918 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:17:50,918 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:17:50,918 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,922 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,922 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 19:17:50,944 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,944 - INFO - Starting the extract stage
+2025-01-16 19:17:50,944 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,944 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:17:50,944 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:17:50,945 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,948 - INFO - Test path doesnt have same uuid failed as expected with error: 2025-01-16 19:17:50,944 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,944 - INFO - Starting the extract stage
+2025-01-16 19:17:50,944 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,944 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:17:50,944 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:17:50,945 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,948 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,948 - INFO - Running Test: results path doesnt end with out
+2025-01-16 19:17:50,970 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,970 - INFO - Starting the extract stage
+2025-01-16 19:17:50,970 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,970 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:17:50,970 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:17:50,970 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,973 - INFO - Test results path doesnt end with out failed as expected with error: 2025-01-16 19:17:50,970 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,970 - INFO - Starting the extract stage
+2025-01-16 19:17:50,970 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,970 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:17:50,970 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:17:50,970 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:17:50,973 - INFO - --------------------------------------------------
+2025-01-16 19:17:50,973 - INFO - Running Test: Valid Input
+2025-01-16 19:17:50,996 - INFO - ETL pipeline started.
+2025-01-16 19:17:50,996 - INFO - Starting the extract stage
+2025-01-16 19:17:50,997 - INFO - Validating input JSON structure.
+2025-01-16 19:17:50,997 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:17:50,997 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:17:50,997 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:17:50,997 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:17:50,997 - INFO - Starting the Transform stage.
+2025-01-16 19:17:50,997 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:17:50,999 - INFO - JSON file validation and processing complete.
+2025-01-16 19:17:51,000 - INFO - Transform stage completed successfully.
+2025-01-16 19:17:51,000 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:17:51,088 - INFO - Completed processing TXT file.
+2025-01-16 19:17:51,089 - INFO - Starting the Load stage.
+2025-01-16 19:17:51,091 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:17:51,091 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:17:51,099 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 19:17:51,099 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,678 - INFO - Running Test: Under 40 Years Old
+2025-01-16 19:18:01,708 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,708 - INFO - Starting the extract stage
+2025-01-16 19:18:01,709 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,709 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:01,709 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:01,709 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:18:01,709 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:18:01,709 - INFO - Starting the Transform stage.
+2025-01-16 19:18:01,709 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:18:01,711 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:18:01,711 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,715 - INFO - Test Under 40 Years Old failed as expected with error: 2025-01-16 19:18:01,708 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,708 - INFO - Starting the extract stage
+2025-01-16 19:18:01,709 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,709 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:01,709 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:01,709 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:18:01,709 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:18:01,709 - INFO - Starting the Transform stage.
+2025-01-16 19:18:01,709 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:18:01,711 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:18:01,711 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,715 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,715 - INFO - Running Test: Dates Out of Range
+2025-01-16 19:18:01,739 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,739 - INFO - Starting the extract stage
+2025-01-16 19:18:01,739 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,739 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:01,739 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:01,739 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:18:01,739 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:18:01,739 - INFO - Starting the Transform stage.
+2025-01-16 19:18:01,740 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:18:01,741 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:18:01,741 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,745 - INFO - Test Dates Out of Range failed as expected with error: 2025-01-16 19:18:01,739 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,739 - INFO - Starting the extract stage
+2025-01-16 19:18:01,739 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,739 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:01,739 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:01,739 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:18:01,739 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:18:01,739 - INFO - Starting the Transform stage.
+2025-01-16 19:18:01,740 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:18:01,741 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:18:01,741 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,745 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,745 - INFO - Running Test: Fields Exceed Length
+2025-01-16 19:18:01,768 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,768 - INFO - Starting the extract stage
+2025-01-16 19:18:01,768 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,768 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:01,768 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:01,768 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:18:01,768 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:18:01,768 - INFO - Starting the Transform stage.
+2025-01-16 19:18:01,768 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:18:01,769 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:18:01,769 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,772 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 19:18:01,768 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,768 - INFO - Starting the extract stage
+2025-01-16 19:18:01,768 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,768 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:01,768 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:01,768 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:18:01,768 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:18:01,768 - INFO - Starting the Transform stage.
+2025-01-16 19:18:01,768 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:18:01,769 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:18:01,769 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,772 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,772 - INFO - Running Test: Invalid UUID
+2025-01-16 19:18:01,797 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,797 - INFO - Starting the extract stage
+2025-01-16 19:18:01,797 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,797 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:01,797 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:01,797 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:18:01,797 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,800 - INFO - Test Invalid UUID failed as expected with error: 2025-01-16 19:18:01,797 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,797 - INFO - Starting the extract stage
+2025-01-16 19:18:01,797 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,797 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:01,797 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:01,797 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:18:01,797 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,801 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,801 - INFO - Running Test: Missing File
+2025-01-16 19:18:01,823 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,823 - INFO - Starting the extract stage
+2025-01-16 19:18:01,823 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,823 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:01,823 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:01,823 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:18:01,823 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,827 - INFO - Test Missing File failed as expected with error: 2025-01-16 19:18:01,823 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,823 - INFO - Starting the extract stage
+2025-01-16 19:18:01,823 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,823 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:01,823 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:01,823 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:18:01,823 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,827 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,827 - INFO - Running Test: Missing context_path
+2025-01-16 19:18:01,848 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,848 - INFO - Starting the extract stage
+2025-01-16 19:18:01,849 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,849 - ERROR - Invalid or missing context_path:
+2025-01-16 19:18:01,849 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:18:01,849 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:18:01,849 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:18:01,852 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 19:18:01,848 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,848 - INFO - Starting the extract stage
+2025-01-16 19:18:01,849 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,849 - ERROR - Invalid or missing context_path:
+2025-01-16 19:18:01,849 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:18:01,849 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:18:01,849 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:18:01,852 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,852 - INFO - Running Test: Extra Files
+2025-01-16 19:18:01,875 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,875 - INFO - Starting the extract stage
+2025-01-16 19:18:01,875 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,875 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:01,875 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:01,875 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:18:01,875 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,878 - INFO - Test Extra Files failed as expected with error: 2025-01-16 19:18:01,875 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,875 - INFO - Starting the extract stage
+2025-01-16 19:18:01,875 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,875 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:01,875 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:01,875 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:18:01,875 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,878 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,878 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 19:18:01,900 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,900 - INFO - Starting the extract stage
+2025-01-16 19:18:01,900 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,900 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:18:01,900 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:18:01,900 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,904 - INFO - Test path doesnt have same uuid failed as expected with error: 2025-01-16 19:18:01,900 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,900 - INFO - Starting the extract stage
+2025-01-16 19:18:01,900 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,900 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:18:01,900 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:18:01,900 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,904 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,904 - INFO - Running Test: results path doesnt end with out
+2025-01-16 19:18:01,926 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,926 - INFO - Starting the extract stage
+2025-01-16 19:18:01,927 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,927 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:18:01,927 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:18:01,927 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,930 - INFO - Test results path doesnt end with out failed as expected with error: 2025-01-16 19:18:01,926 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,926 - INFO - Starting the extract stage
+2025-01-16 19:18:01,927 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,927 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:18:01,927 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:18:01,927 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:01,930 - INFO - --------------------------------------------------
+2025-01-16 19:18:01,930 - INFO - Running Test: Valid Input
+2025-01-16 19:18:01,952 - INFO - ETL pipeline started.
+2025-01-16 19:18:01,952 - INFO - Starting the extract stage
+2025-01-16 19:18:01,952 - INFO - Validating input JSON structure.
+2025-01-16 19:18:01,952 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:18:01,952 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:18:01,952 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:18:01,952 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:18:01,952 - INFO - Starting the Transform stage.
+2025-01-16 19:18:01,952 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:18:01,954 - INFO - JSON file validation and processing complete.
+2025-01-16 19:18:01,954 - INFO - Transform stage completed successfully.
+2025-01-16 19:18:01,954 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:18:02,034 - INFO - Completed processing TXT file.
+2025-01-16 19:18:02,034 - INFO - Starting the Load stage.
+2025-01-16 19:18:02,035 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:18:02,035 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:18:02,044 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 19:18:02,044 - INFO - --------------------------------------------------
+2025-01-16 19:18:11,854 - INFO - Running Test: Under 40 Years Old
+2025-01-16 19:18:11,886 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,886 - INFO - Starting the extract stage
+2025-01-16 19:18:11,887 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,887 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:11,887 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:11,887 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:18:11,887 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:18:11,887 - INFO - Starting the Transform stage.
+2025-01-16 19:18:11,887 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:18:11,889 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:18:11,889 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,893 - INFO - Test Under 40 Years Old failed as expected with error: 2025-01-16 19:18:11,886 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,886 - INFO - Starting the extract stage
+2025-01-16 19:18:11,887 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,887 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:11,887 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:18:11,887 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:18:11,887 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:18:11,887 - INFO - Starting the Transform stage.
+2025-01-16 19:18:11,887 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:18:11,889 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:18:11,889 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,893 - INFO - --------------------------------------------------
+2025-01-16 19:18:11,893 - INFO - Running Test: Dates Out of Range
+2025-01-16 19:18:11,917 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,917 - INFO - Starting the extract stage
+2025-01-16 19:18:11,917 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,917 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:11,917 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:11,917 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:18:11,917 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:18:11,917 - INFO - Starting the Transform stage.
+2025-01-16 19:18:11,917 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:18:11,919 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:18:11,919 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,923 - INFO - Test Dates Out of Range failed as expected with error: 2025-01-16 19:18:11,917 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,917 - INFO - Starting the extract stage
+2025-01-16 19:18:11,917 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,917 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:11,917 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:18:11,917 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:18:11,917 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:18:11,917 - INFO - Starting the Transform stage.
+2025-01-16 19:18:11,917 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:18:11,919 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:18:11,919 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,923 - INFO - --------------------------------------------------
+2025-01-16 19:18:11,923 - INFO - Running Test: Fields Exceed Length
+2025-01-16 19:18:11,947 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,947 - INFO - Starting the extract stage
+2025-01-16 19:18:11,947 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,947 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:11,947 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:11,947 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:18:11,947 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:18:11,947 - INFO - Starting the Transform stage.
+2025-01-16 19:18:11,947 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:18:11,947 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:18:11,948 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,951 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 19:18:11,947 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,947 - INFO - Starting the extract stage
+2025-01-16 19:18:11,947 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,947 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:11,947 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:18:11,947 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:18:11,947 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:18:11,947 - INFO - Starting the Transform stage.
+2025-01-16 19:18:11,947 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:18:11,947 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:18:11,948 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,951 - INFO - --------------------------------------------------
+2025-01-16 19:18:11,951 - INFO - Running Test: Invalid UUID
+2025-01-16 19:18:11,974 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,974 - INFO - Starting the extract stage
+2025-01-16 19:18:11,974 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,974 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:11,974 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:11,974 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:18:11,974 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,978 - INFO - Test Invalid UUID failed as expected with error: 2025-01-16 19:18:11,974 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,974 - INFO - Starting the extract stage
+2025-01-16 19:18:11,974 - INFO - Validating input JSON structure.
+2025-01-16 19:18:11,974 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:11,974 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:18:11,974 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:18:11,974 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:11,978 - INFO - --------------------------------------------------
+2025-01-16 19:18:11,978 - INFO - Running Test: Missing File
+2025-01-16 19:18:11,999 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,999 - INFO - Starting the extract stage
+2025-01-16 19:18:12,000 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,000 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:12,000 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:12,000 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:18:12,000 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,003 - INFO - Test Missing File failed as expected with error: 2025-01-16 19:18:11,999 - INFO - ETL pipeline started.
+2025-01-16 19:18:11,999 - INFO - Starting the extract stage
+2025-01-16 19:18:12,000 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,000 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:12,000 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:18:12,000 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:18:12,000 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,004 - INFO - --------------------------------------------------
+2025-01-16 19:18:12,004 - INFO - Running Test: Missing context_path
+2025-01-16 19:18:12,025 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,025 - INFO - Starting the extract stage
+2025-01-16 19:18:12,025 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,025 - ERROR - Invalid or missing context_path:
+2025-01-16 19:18:12,025 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:18:12,025 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:18:12,025 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:18:12,029 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 19:18:12,025 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,025 - INFO - Starting the extract stage
+2025-01-16 19:18:12,025 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,025 - ERROR - Invalid or missing context_path:
+2025-01-16 19:18:12,025 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:18:12,025 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:18:12,025 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:18:12,029 - INFO - --------------------------------------------------
+2025-01-16 19:18:12,029 - INFO - Running Test: Extra Files
+2025-01-16 19:18:12,052 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,052 - INFO - Starting the extract stage
+2025-01-16 19:18:12,052 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,052 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:12,052 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:12,052 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:18:12,052 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,055 - INFO - Test Extra Files failed as expected with error: 2025-01-16 19:18:12,052 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,052 - INFO - Starting the extract stage
+2025-01-16 19:18:12,052 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,052 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:12,052 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:18:12,052 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:18:12,052 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,055 - INFO - --------------------------------------------------
+2025-01-16 19:18:12,055 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 19:18:12,080 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,080 - INFO - Starting the extract stage
+2025-01-16 19:18:12,080 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,080 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:18:12,080 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:18:12,080 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,084 - INFO - Test path doesnt have same uuid failed as expected with error: 2025-01-16 19:18:12,080 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,080 - INFO - Starting the extract stage
+2025-01-16 19:18:12,080 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,080 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:18:12,080 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:18:12,080 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,084 - INFO - --------------------------------------------------
+2025-01-16 19:18:12,084 - INFO - Running Test: results path doesnt end with out
+2025-01-16 19:18:12,107 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,108 - INFO - Starting the extract stage
+2025-01-16 19:18:12,108 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,108 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:18:12,108 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:18:12,108 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,111 - INFO - Test results path doesnt end with out failed as expected with error: 2025-01-16 19:18:12,107 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,108 - INFO - Starting the extract stage
+2025-01-16 19:18:12,108 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,108 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:18:12,108 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:18:12,108 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:18:12,111 - INFO - --------------------------------------------------
+2025-01-16 19:18:12,111 - INFO - Running Test: Valid Input
+2025-01-16 19:18:12,133 - INFO - ETL pipeline started.
+2025-01-16 19:18:12,133 - INFO - Starting the extract stage
+2025-01-16 19:18:12,134 - INFO - Validating input JSON structure.
+2025-01-16 19:18:12,134 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:18:12,134 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:18:12,134 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:18:12,134 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:18:12,134 - INFO - Starting the Transform stage.
+2025-01-16 19:18:12,134 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:18:12,136 - INFO - JSON file validation and processing complete.
+2025-01-16 19:18:12,136 - INFO - Transform stage completed successfully.
+2025-01-16 19:18:12,136 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:18:12,213 - INFO - Completed processing TXT file.
+2025-01-16 19:18:12,213 - INFO - Starting the Load stage.
+2025-01-16 19:18:12,214 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:18:12,214 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:18:12,222 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 19:18:12,222 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,008 - INFO - Running Test: Under 40 Years Old
+2025-01-16 19:23:39,044 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,044 - INFO - Starting the extract stage
+2025-01-16 19:23:39,044 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,044 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:23:39,045 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:23:39,045 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:23:39,045 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:23:39,045 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:23:39,045 - INFO - Starting the Transform stage.
+2025-01-16 19:23:39,045 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:23:39,048 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:23:39,048 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,051 - INFO - Test Under 40 Years Old failed as expected with error: 2025-01-16 19:23:39,044 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,044 - INFO - Starting the extract stage
+2025-01-16 19:23:39,044 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,044 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:23:39,045 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:23:39,045 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:23:39,045 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:23:39,045 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:23:39,045 - INFO - Starting the Transform stage.
+2025-01-16 19:23:39,045 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:23:39,048 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:23:39,048 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,052 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,052 - INFO - Running Test: Dates Out of Range
+2025-01-16 19:23:39,075 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,075 - INFO - Starting the extract stage
+2025-01-16 19:23:39,075 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,075 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:23:39,075 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:23:39,075 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:23:39,075 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:23:39,075 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:23:39,075 - INFO - Starting the Transform stage.
+2025-01-16 19:23:39,075 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:23:39,077 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:23:39,077 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,081 - INFO - Test Dates Out of Range failed as expected with error: 2025-01-16 19:23:39,075 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,075 - INFO - Starting the extract stage
+2025-01-16 19:23:39,075 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,075 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:23:39,075 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:23:39,075 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:23:39,075 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:23:39,075 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:23:39,075 - INFO - Starting the Transform stage.
+2025-01-16 19:23:39,075 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:23:39,077 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:23:39,077 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,081 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,081 - INFO - Running Test: Fields Exceed Length
+2025-01-16 19:23:39,104 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,104 - INFO - Starting the extract stage
+2025-01-16 19:23:39,104 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,104 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:23:39,104 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:23:39,104 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:23:39,105 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:23:39,105 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:23:39,105 - INFO - Starting the Transform stage.
+2025-01-16 19:23:39,105 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:23:39,105 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:23:39,105 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,108 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 19:23:39,104 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,104 - INFO - Starting the extract stage
+2025-01-16 19:23:39,104 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,104 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:23:39,104 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:23:39,104 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:23:39,105 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:23:39,105 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:23:39,105 - INFO - Starting the Transform stage.
+2025-01-16 19:23:39,105 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:23:39,105 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:23:39,105 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,108 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,108 - INFO - Running Test: Invalid UUID
+2025-01-16 19:23:39,131 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,131 - INFO - Starting the extract stage
+2025-01-16 19:23:39,132 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,132 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:23:39,132 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:23:39,132 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:23:39,132 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:23:39,132 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,135 - INFO - Test Invalid UUID failed as expected with error: 2025-01-16 19:23:39,131 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,131 - INFO - Starting the extract stage
+2025-01-16 19:23:39,132 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,132 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:23:39,132 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:23:39,132 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:23:39,132 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:23:39,132 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,135 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,135 - INFO - Running Test: Missing File
+2025-01-16 19:23:39,158 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,158 - INFO - Starting the extract stage
+2025-01-16 19:23:39,159 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,159 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:23:39,159 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:23:39,159 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:23:39,159 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:23:39,159 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,162 - INFO - Test Missing File failed as expected with error: 2025-01-16 19:23:39,158 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,158 - INFO - Starting the extract stage
+2025-01-16 19:23:39,159 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,159 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:23:39,159 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:23:39,159 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:23:39,159 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:23:39,159 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,162 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,162 - INFO - Running Test: Missing context_path
+2025-01-16 19:23:39,184 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,184 - INFO - Starting the extract stage
+2025-01-16 19:23:39,184 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,184 - ERROR - Invalid or missing context_path:
+2025-01-16 19:23:39,184 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:23:39,184 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:23:39,185 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:23:39,188 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 19:23:39,184 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,184 - INFO - Starting the extract stage
+2025-01-16 19:23:39,184 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,184 - ERROR - Invalid or missing context_path:
+2025-01-16 19:23:39,184 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:23:39,184 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:23:39,185 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:23:39,188 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,188 - INFO - Running Test: Extra Files
+2025-01-16 19:23:39,211 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,212 - INFO - Starting the extract stage
+2025-01-16 19:23:39,212 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,212 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:23:39,213 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:23:39,213 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:23:39,213 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:23:39,213 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,216 - INFO - Test Extra Files failed as expected with error: 2025-01-16 19:23:39,211 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,212 - INFO - Starting the extract stage
+2025-01-16 19:23:39,212 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,212 - INFO - creating results directory at ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:23:39,213 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:23:39,213 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:23:39,213 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:23:39,213 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,216 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,216 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 19:23:39,239 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,239 - INFO - Starting the extract stage
+2025-01-16 19:23:39,239 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,239 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:23:39,239 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:23:39,239 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,243 - INFO - Test path doesnt have same uuid failed as expected with error: 2025-01-16 19:23:39,239 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,239 - INFO - Starting the extract stage
+2025-01-16 19:23:39,239 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,239 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:23:39,239 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:23:39,239 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,243 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,243 - INFO - Running Test: results path doesnt end with out
+2025-01-16 19:23:39,266 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,266 - INFO - Starting the extract stage
+2025-01-16 19:23:39,266 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,266 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:23:39,266 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:23:39,267 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,270 - INFO - Test results path doesnt end with out failed as expected with error: 2025-01-16 19:23:39,266 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,266 - INFO - Starting the extract stage
+2025-01-16 19:23:39,266 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,266 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:23:39,266 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:23:39,267 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:23:39,270 - INFO - --------------------------------------------------
+2025-01-16 19:23:39,270 - INFO - Running Test: Valid Input
+2025-01-16 19:23:39,292 - INFO - ETL pipeline started.
+2025-01-16 19:23:39,292 - INFO - Starting the extract stage
+2025-01-16 19:23:39,292 - INFO - Validating input JSON structure.
+2025-01-16 19:23:39,292 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:23:39,292 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:23:39,292 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:23:39,292 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:23:39,292 - INFO - Starting the Transform stage.
+2025-01-16 19:23:39,293 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:23:39,294 - INFO - JSON file validation and processing complete.
+2025-01-16 19:23:39,294 - INFO - Transform stage completed successfully.
+2025-01-16 19:23:39,294 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:23:39,380 - INFO - Completed processing TXT file.
+2025-01-16 19:23:39,380 - INFO - Starting the Load stage.
+2025-01-16 19:23:39,382 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:23:39,382 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:23:39,391 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 19:23:39,391 - INFO - --------------------------------------------------
+2025-01-16 19:25:16,909 - INFO - ETL pipeline started.
+2025-01-16 19:25:16,910 - INFO - Starting the extract stage
+2025-01-16 19:25:16,910 - INFO - Validating input JSON structure.
+2025-01-16 19:25:16,910 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:25:16,910 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:25:16,910 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:25:16,910 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:25:16,910 - INFO - Starting the Transform stage.
+2025-01-16 19:25:16,911 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:25:16,914 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:25:16,914 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,067 - INFO - Running Test: Under 40 Years Old
+2025-01-16 19:55:05,094 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,094 - INFO - Starting the extract stage
+2025-01-16 19:55:05,094 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,095 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:55:05,095 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:55:05,095 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:55:05,095 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:55:05,095 - INFO - Starting the Transform stage.
+2025-01-16 19:55:05,095 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:55:05,097 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:55:05,097 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,101 - INFO - Test Under 40 Years Old failed as expected with error: 2025-01-16 19:55:05,094 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,094 - INFO - Starting the extract stage
+2025-01-16 19:55:05,094 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,095 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:55:05,095 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 19:55:05,095 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 19:55:05,095 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 19:55:05,095 - INFO - Starting the Transform stage.
+2025-01-16 19:55:05,095 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 19:55:05,097 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 19:55:05,097 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,101 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,101 - INFO - Running Test: Dates Out of Range
+2025-01-16 19:55:05,122 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,122 - INFO - Starting the extract stage
+2025-01-16 19:55:05,122 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,122 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:55:05,122 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:55:05,122 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:55:05,122 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:55:05,122 - INFO - Starting the Transform stage.
+2025-01-16 19:55:05,123 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:55:05,124 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:55:05,124 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,127 - INFO - Test Dates Out of Range failed as expected with error: 2025-01-16 19:55:05,122 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,122 - INFO - Starting the extract stage
+2025-01-16 19:55:05,122 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,122 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:55:05,122 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 19:55:05,122 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 19:55:05,122 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 19:55:05,122 - INFO - Starting the Transform stage.
+2025-01-16 19:55:05,123 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 19:55:05,124 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 19:55:05,124 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,127 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,127 - INFO - Running Test: Fields Exceed Length
+2025-01-16 19:55:05,149 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,149 - INFO - Starting the extract stage
+2025-01-16 19:55:05,149 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,149 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:55:05,149 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:55:05,149 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:55:05,149 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:55:05,149 - INFO - Starting the Transform stage.
+2025-01-16 19:55:05,149 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:55:05,149 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:55:05,149 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,153 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 19:55:05,149 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,149 - INFO - Starting the extract stage
+2025-01-16 19:55:05,149 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,149 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:55:05,149 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 19:55:05,149 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 19:55:05,149 - INFO - Validated participant files: {'.json': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 19:55:05,149 - INFO - Starting the Transform stage.
+2025-01-16 19:55:05,149 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 19:55:05,149 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 19:55:05,149 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,153 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,153 - INFO - Running Test: Invalid UUID
+2025-01-16 19:55:05,174 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,174 - INFO - Starting the extract stage
+2025-01-16 19:55:05,175 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,175 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:55:05,175 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:55:05,175 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:55:05,175 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,178 - INFO - Test Invalid UUID failed as expected with error: 2025-01-16 19:55:05,174 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,174 - INFO - Starting the extract stage
+2025-01-16 19:55:05,175 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,175 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:55:05,175 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 19:55:05,175 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 19:55:05,175 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,178 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,178 - INFO - Running Test: Missing File
+2025-01-16 19:55:05,199 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,199 - INFO - Starting the extract stage
+2025-01-16 19:55:05,199 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,200 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:55:05,200 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:55:05,200 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:55:05,200 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,203 - INFO - Test Missing File failed as expected with error: 2025-01-16 19:55:05,199 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,199 - INFO - Starting the extract stage
+2025-01-16 19:55:05,199 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,200 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:55:05,200 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 19:55:05,200 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 19:55:05,200 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,203 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,203 - INFO - Running Test: Missing context_path
+2025-01-16 19:55:05,224 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,224 - INFO - Starting the extract stage
+2025-01-16 19:55:05,224 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,224 - ERROR - Invalid or missing context_path:
+2025-01-16 19:55:05,224 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:55:05,224 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:55:05,224 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:55:05,227 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 19:55:05,224 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,224 - INFO - Starting the extract stage
+2025-01-16 19:55:05,224 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,224 - ERROR - Invalid or missing context_path:
+2025-01-16 19:55:05,224 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 19:55:05,224 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 19:55:05,224 - ERROR - Pipeline exiting due to validation error
+2025-01-16 19:55:05,227 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,227 - INFO - Running Test: Extra Files
+2025-01-16 19:55:05,249 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,249 - INFO - Starting the extract stage
+2025-01-16 19:55:05,250 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,250 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:55:05,250 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:55:05,250 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:55:05,250 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,253 - INFO - Test Extra Files failed as expected with error: 2025-01-16 19:55:05,249 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,249 - INFO - Starting the extract stage
+2025-01-16 19:55:05,250 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,250 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:55:05,250 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 19:55:05,250 - ERROR - Expected exactly 2 files in ./f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 19:55:05,250 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,253 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,253 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 19:55:05,274 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,274 - INFO - Starting the extract stage
+2025-01-16 19:55:05,275 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,275 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:55:05,275 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:55:05,275 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,278 - INFO - Test path doesnt have same uuid failed as expected with error: 2025-01-16 19:55:05,274 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,274 - INFO - Starting the extract stage
+2025-01-16 19:55:05,275 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,275 - ERROR - Results path and context path must share the same base directory: context_path=./f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 19:55:05,275 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 19:55:05,275 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,278 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,278 - INFO - Running Test: results path doesnt end with out
+2025-01-16 19:55:05,299 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,299 - INFO - Starting the extract stage
+2025-01-16 19:55:05,299 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,299 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:55:05,299 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:55:05,299 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,303 - INFO - Test results path doesnt end with out failed as expected with error: 2025-01-16 19:55:05,299 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,299 - INFO - Starting the extract stage
+2025-01-16 19:55:05,299 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,299 - ERROR - Results path does not end with '/out/'
+2025-01-16 19:55:05,299 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 19:55:05,299 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 19:55:05,303 - INFO - --------------------------------------------------
+2025-01-16 19:55:05,303 - INFO - Running Test: Valid Input
+2025-01-16 19:55:05,324 - INFO - ETL pipeline started.
+2025-01-16 19:55:05,324 - INFO - Starting the extract stage
+2025-01-16 19:55:05,324 - INFO - Validating input JSON structure.
+2025-01-16 19:55:05,324 - INFO - Validation successful for context_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:55:05,324 - INFO - Validated paths: context_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 19:55:05,324 - INFO - Validation successful for files in ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:55:05,325 - INFO - Validated participant files: {'.txt': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 19:55:05,325 - INFO - Starting the Transform stage.
+2025-01-16 19:55:05,325 - INFO - Validating JSON file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 19:55:05,326 - INFO - JSON file validation and processing complete.
+2025-01-16 19:55:05,326 - INFO - Transform stage completed successfully.
+2025-01-16 19:55:05,326 - INFO - Processing TXT file: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 19:55:05,407 - INFO - Completed processing TXT file.
+2025-01-16 19:55:05,407 - INFO - Starting the Load stage.
+2025-01-16 19:55:05,408 - INFO - Load stage completed successfully. Results saved to ./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 19:55:05,408 - INFO - ETL pipeline completed successfully.
+2025-01-16 19:55:05,416 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 19:55:05,416 - INFO - --------------------------------------------------
+2025-01-16 19:59:54,846 - INFO - ETL pipeline started.
+2025-01-16 19:59:54,846 - INFO - Starting the extract stage
+2025-01-16 19:59:54,846 - INFO - Validating input JSON structure.
+2025-01-16 19:59:54,846 - ERROR - Invalid or missing context_path:
+2025-01-16 19:59:54,846 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:59:54,846 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 19:59:54,846 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:41:09,390 - INFO - ETL pipeline started.
+2025-01-16 20:41:09,390 - INFO - Starting the extract stage
+2025-01-16 20:41:09,390 - INFO - Validating input JSON structure.
+2025-01-16 20:41:09,390 - ERROR - Results path and context path must share the same base directory: context_path=/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d, results_path=/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/ 
+2025-01-16 20:41:09,390 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 20:41:09,390 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:42:51,686 - INFO - ETL pipeline started.
+2025-01-16 20:42:51,686 - INFO - Starting the extract stage
+2025-01-16 20:42:51,686 - INFO - Validating input JSON structure.
+2025-01-16 20:42:51,686 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:42:51,686 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:42:51,686 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 20:42:51,686 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 20:42:51,686 - INFO - Starting the Transform stage.
+2025-01-16 20:42:51,687 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 20:42:51,689 - INFO - JSON file validation and processing complete.
+2025-01-16 20:42:51,689 - INFO - Transform stage completed successfully.
+2025-01-16 20:42:51,689 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 20:42:51,766 - INFO - Completed processing TXT file.
+2025-01-16 20:42:51,766 - INFO - Starting the Load stage.
+2025-01-16 20:42:51,770 - INFO - Load stage completed successfully. Results saved to /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 20:42:51,770 - INFO - ETL pipeline completed successfully.
+2025-01-16 20:45:34,426 - INFO - ETL pipeline started.
+2025-01-16 20:45:34,426 - INFO - Starting the extract stage
+2025-01-16 20:45:34,426 - ERROR - Input file not found: inputs/valid_input
+2025-01-16 20:45:34,426 - ERROR - File Error: Input file does not exist: inputs/valid_input
+2025-01-16 20:45:34,426 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:45:49,563 - INFO - ETL pipeline started.
+2025-01-16 20:45:49,564 - INFO - Starting the extract stage
+2025-01-16 20:45:49,564 - INFO - Validating input JSON structure.
+2025-01-16 20:45:49,564 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-16 20:45:49,564 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-16 20:45:49,564 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-16 20:45:49,564 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 20:45:49,564 - INFO - Starting the Transform stage.
+2025-01-16 20:45:49,564 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 20:45:49,567 - INFO - JSON file validation and processing complete.
+2025-01-16 20:45:49,567 - INFO - Transform stage completed successfully.
+2025-01-16 20:45:49,567 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 20:45:49,640 - INFO - Completed processing TXT file.
+2025-01-16 20:45:49,640 - INFO - Starting the Load stage.
+2025-01-16 20:45:49,642 - INFO - Load stage completed successfully. Results saved to /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 20:45:49,642 - INFO - ETL pipeline completed successfully.
+2025-01-16 20:46:25,531 - INFO - Running Test: Under 40 Years Old
+2025-01-16 20:46:25,562 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,562 - INFO - Starting the extract stage
+2025-01-16 20:46:25,562 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,562 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,562 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:46:25,562 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:46:25,562 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,566 - ERROR - Test Under 40 Years Old failed with unexpected error: 2025-01-16 20:46:25,562 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,562 - INFO - Starting the extract stage
+2025-01-16 20:46:25,562 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,562 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,562 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:46:25,562 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:46:25,562 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,566 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,566 - INFO - Running Test: Dates Out of Range
+2025-01-16 20:46:25,587 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,587 - INFO - Starting the extract stage
+2025-01-16 20:46:25,587 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,587 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,587 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:46:25,587 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:46:25,587 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,591 - ERROR - Test Dates Out of Range failed with unexpected error: 2025-01-16 20:46:25,587 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,587 - INFO - Starting the extract stage
+2025-01-16 20:46:25,587 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,587 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,587 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:46:25,587 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:46:25,587 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,591 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,591 - INFO - Running Test: Fields Exceed Length
+2025-01-16 20:46:25,614 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,614 - INFO - Starting the extract stage
+2025-01-16 20:46:25,614 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,614 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,614 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:46:25,614 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:46:25,614 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,617 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 20:46:25,614 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,614 - INFO - Starting the extract stage
+2025-01-16 20:46:25,614 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,614 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,614 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:46:25,614 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:46:25,614 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,618 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,618 - INFO - Running Test: Invalid UUID
+2025-01-16 20:46:25,639 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,639 - INFO - Starting the extract stage
+2025-01-16 20:46:25,640 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,640 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,640 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/
+2025-01-16 20:46:25,640 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/
+2025-01-16 20:46:25,640 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,643 - ERROR - Test Invalid UUID failed with unexpected error: 2025-01-16 20:46:25,639 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,639 - INFO - Starting the extract stage
+2025-01-16 20:46:25,640 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,640 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,640 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/
+2025-01-16 20:46:25,640 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76361-/
+2025-01-16 20:46:25,640 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,643 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,643 - INFO - Running Test: Missing File
+2025-01-16 20:46:25,665 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,666 - INFO - Starting the extract stage
+2025-01-16 20:46:25,666 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,666 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,666 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/
+2025-01-16 20:46:25,666 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/
+2025-01-16 20:46:25,666 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,669 - ERROR - Test Missing File failed with unexpected error: 2025-01-16 20:46:25,665 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,666 - INFO - Starting the extract stage
+2025-01-16 20:46:25,666 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,666 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,666 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/
+2025-01-16 20:46:25,666 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76362/
+2025-01-16 20:46:25,666 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,669 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,669 - INFO - Running Test: Missing context_path
+2025-01-16 20:46:25,691 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,691 - INFO - Starting the extract stage
+2025-01-16 20:46:25,691 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,691 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,691 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 20:46:25,691 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 20:46:25,691 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,694 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 20:46:25,691 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,691 - INFO - Starting the extract stage
+2025-01-16 20:46:25,691 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,691 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,691 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 20:46:25,691 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 20:46:25,691 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,694 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,694 - INFO - Running Test: Extra Files
+2025-01-16 20:46:25,716 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,716 - INFO - Starting the extract stage
+2025-01-16 20:46:25,716 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,716 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,716 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:46:25,716 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:46:25,716 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,719 - ERROR - Test Extra Files failed with unexpected error: 2025-01-16 20:46:25,716 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,716 - INFO - Starting the extract stage
+2025-01-16 20:46:25,716 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,716 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,716 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:46:25,716 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:46:25,716 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,719 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,719 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 20:46:25,740 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,740 - INFO - Starting the extract stage
+2025-01-16 20:46:25,740 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,740 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,740 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76364/
+2025-01-16 20:46:25,740 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76364/
+2025-01-16 20:46:25,740 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,743 - ERROR - Test path doesnt have same uuid failed with unexpected error: 2025-01-16 20:46:25,740 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,740 - INFO - Starting the extract stage
+2025-01-16 20:46:25,740 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,740 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,740 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76364/
+2025-01-16 20:46:25,740 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76364/
+2025-01-16 20:46:25,740 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,743 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,743 - INFO - Running Test: results path doesnt end with out
+2025-01-16 20:46:25,765 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,765 - INFO - Starting the extract stage
+2025-01-16 20:46:25,765 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,765 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,765 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76365/
+2025-01-16 20:46:25,765 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76365/
+2025-01-16 20:46:25,765 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,768 - ERROR - Test results path doesnt end with out failed with unexpected error: 2025-01-16 20:46:25,765 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,765 - INFO - Starting the extract stage
+2025-01-16 20:46:25,765 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,765 - ERROR - Invalid or missing context_path:
+2025-01-16 20:46:25,765 - ERROR - Input validation failed: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76365/
+2025-01-16 20:46:25,765 - ERROR - File Error: Invalid or missing context path: ./f3324a99-8a63-4ada-9d1d-562f84c76365/
+2025-01-16 20:46:25,765 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:46:25,768 - INFO - --------------------------------------------------
+2025-01-16 20:46:25,768 - INFO - Running Test: Valid Input
+2025-01-16 20:46:25,789 - INFO - ETL pipeline started.
+2025-01-16 20:46:25,789 - INFO - Starting the extract stage
+2025-01-16 20:46:25,789 - INFO - Validating input JSON structure.
+2025-01-16 20:46:25,789 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:46:25,789 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:46:25,789 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 20:46:25,789 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 20:46:25,789 - INFO - Starting the Transform stage.
+2025-01-16 20:46:25,789 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 20:46:25,792 - INFO - JSON file validation and processing complete.
+2025-01-16 20:46:25,792 - INFO - Transform stage completed successfully.
+2025-01-16 20:46:25,792 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 20:46:25,868 - INFO - Completed processing TXT file.
+2025-01-16 20:46:25,869 - INFO - Starting the Load stage.
+2025-01-16 20:46:25,870 - INFO - Load stage completed successfully. Results saved to /Users/omerkuriel/Desktop/home_assignment/backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 20:46:25,870 - INFO - ETL pipeline completed successfully.
+2025-01-16 20:46:25,877 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 20:46:25,877 - INFO - --------------------------------------------------
+2025-01-16 20:48:11,178 - INFO - ETL pipeline started.
+2025-01-16 20:48:11,178 - INFO - Starting the extract stage
+2025-01-16 20:48:11,178 - INFO - Validating input JSON structure.
+2025-01-16 20:48:11,178 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:48:11,178 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:48:11,178 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 20:48:11,178 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 20:48:11,178 - INFO - Starting the Transform stage.
+2025-01-16 20:48:11,179 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 20:48:11,181 - INFO - JSON file validation and processing complete.
+2025-01-16 20:48:11,181 - INFO - Transform stage completed successfully.
+2025-01-16 20:48:11,182 - INFO - Processing TXT file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 20:48:11,266 - INFO - Completed processing TXT file.
+2025-01-16 20:48:11,266 - INFO - Starting the Load stage.
+2025-01-16 20:48:11,270 - INFO - Load stage completed successfully. Results saved to ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 20:48:11,270 - INFO - ETL pipeline completed successfully.
+2025-01-16 20:50:04,963 - INFO - Running Test: Under 40 Years Old
+2025-01-16 20:50:05,001 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,001 - INFO - Starting the extract stage
+2025-01-16 20:50:05,002 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,002 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:50:05,002 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:50:05,002 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:50:05,002 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 20:50:05,002 - INFO - Starting the Transform stage.
+2025-01-16 20:50:05,002 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 20:50:05,005 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 20:50:05,006 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,009 - INFO - Test Under 40 Years Old failed as expected with error: 2025-01-16 20:50:05,001 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,001 - INFO - Starting the extract stage
+2025-01-16 20:50:05,002 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,002 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:50:05,002 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:50:05,002 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:50:05,002 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 20:50:05,002 - INFO - Starting the Transform stage.
+2025-01-16 20:50:05,002 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 20:50:05,005 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 20:50:05,006 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,009 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,011 - INFO - Running Test: Dates Out of Range
+2025-01-16 20:50:05,032 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,032 - INFO - Starting the extract stage
+2025-01-16 20:50:05,033 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,033 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:50:05,033 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:50:05,033 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:50:05,033 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 20:50:05,033 - INFO - Starting the Transform stage.
+2025-01-16 20:50:05,033 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 20:50:05,035 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 20:50:05,035 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,038 - INFO - Test Dates Out of Range failed as expected with error: 2025-01-16 20:50:05,032 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,032 - INFO - Starting the extract stage
+2025-01-16 20:50:05,033 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,033 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:50:05,033 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:50:05,033 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:50:05,033 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 20:50:05,033 - INFO - Starting the Transform stage.
+2025-01-16 20:50:05,033 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 20:50:05,035 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 20:50:05,035 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,038 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,038 - INFO - Running Test: Fields Exceed Length
+2025-01-16 20:50:05,060 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,060 - INFO - Starting the extract stage
+2025-01-16 20:50:05,061 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,061 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:50:05,061 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:50:05,061 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:50:05,061 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 20:50:05,061 - INFO - Starting the Transform stage.
+2025-01-16 20:50:05,061 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 20:50:05,061 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 20:50:05,061 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,064 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 20:50:05,060 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,060 - INFO - Starting the extract stage
+2025-01-16 20:50:05,061 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,061 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:50:05,061 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:50:05,061 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:50:05,061 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 20:50:05,061 - INFO - Starting the Transform stage.
+2025-01-16 20:50:05,061 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 20:50:05,061 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 20:50:05,061 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,064 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,065 - INFO - Running Test: Invalid UUID
+2025-01-16 20:50:05,087 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,087 - INFO - Starting the extract stage
+2025-01-16 20:50:05,087 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,087 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:50:05,087 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:50:05,087 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 20:50:05,087 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,090 - INFO - Test Invalid UUID failed as expected with error: 2025-01-16 20:50:05,087 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,087 - INFO - Starting the extract stage
+2025-01-16 20:50:05,087 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,087 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:50:05,087 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:50:05,087 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 20:50:05,087 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,090 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,090 - INFO - Running Test: Missing File
+2025-01-16 20:50:05,111 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,111 - INFO - Starting the extract stage
+2025-01-16 20:50:05,111 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,112 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:50:05,112 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:50:05,112 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 20:50:05,112 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,115 - INFO - Test Missing File failed as expected with error: 2025-01-16 20:50:05,111 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,111 - INFO - Starting the extract stage
+2025-01-16 20:50:05,111 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,112 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:50:05,112 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:50:05,112 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 20:50:05,112 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,115 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,115 - INFO - Running Test: Missing context_path
+2025-01-16 20:50:05,136 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,136 - INFO - Starting the extract stage
+2025-01-16 20:50:05,136 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,136 - ERROR - Invalid or missing context_path:
+2025-01-16 20:50:05,136 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 20:50:05,136 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 20:50:05,136 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:50:05,140 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 20:50:05,136 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,136 - INFO - Starting the extract stage
+2025-01-16 20:50:05,136 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,136 - ERROR - Invalid or missing context_path:
+2025-01-16 20:50:05,136 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 20:50:05,136 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 20:50:05,136 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:50:05,140 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,140 - INFO - Running Test: Extra Files
+2025-01-16 20:50:05,160 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,160 - INFO - Starting the extract stage
+2025-01-16 20:50:05,160 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,160 - ERROR - Invalid or missing context_path:
+2025-01-16 20:50:05,160 - ERROR - Input validation failed: Invalid or missing context path: /tests/f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:50:05,160 - ERROR - File Error: Invalid or missing context path: /tests/f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:50:05,160 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:50:05,163 - ERROR - Test Extra Files failed with unexpected error: 2025-01-16 20:50:05,160 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,160 - INFO - Starting the extract stage
+2025-01-16 20:50:05,160 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,160 - ERROR - Invalid or missing context_path:
+2025-01-16 20:50:05,160 - ERROR - Input validation failed: Invalid or missing context path: /tests/f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:50:05,160 - ERROR - File Error: Invalid or missing context path: /tests/f3324a99-8a63-4ada-9d1d-562f84c76363/
+2025-01-16 20:50:05,160 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:50:05,163 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,163 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 20:50:05,185 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,185 - INFO - Starting the extract stage
+2025-01-16 20:50:05,185 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,185 - ERROR - Results path and context path must share the same base directory: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 20:50:05,185 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 20:50:05,186 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,189 - INFO - Test path doesnt have same uuid failed as expected with error: 2025-01-16 20:50:05,185 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,185 - INFO - Starting the extract stage
+2025-01-16 20:50:05,185 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,185 - ERROR - Results path and context path must share the same base directory: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 20:50:05,185 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 20:50:05,186 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,189 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,189 - INFO - Running Test: results path doesnt end with out
+2025-01-16 20:50:05,210 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,211 - INFO - Starting the extract stage
+2025-01-16 20:50:05,211 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,211 - ERROR - Results path does not end with '/out/'
+2025-01-16 20:50:05,211 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 20:50:05,211 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,214 - INFO - Test results path doesnt end with out failed as expected with error: 2025-01-16 20:50:05,210 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,211 - INFO - Starting the extract stage
+2025-01-16 20:50:05,211 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,211 - ERROR - Results path does not end with '/out/'
+2025-01-16 20:50:05,211 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 20:50:05,211 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:50:05,215 - INFO - --------------------------------------------------
+2025-01-16 20:50:05,215 - INFO - Running Test: Valid Input
+2025-01-16 20:50:05,237 - INFO - ETL pipeline started.
+2025-01-16 20:50:05,237 - INFO - Starting the extract stage
+2025-01-16 20:50:05,237 - INFO - Validating input JSON structure.
+2025-01-16 20:50:05,237 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:50:05,237 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:50:05,237 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 20:50:05,237 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 20:50:05,237 - INFO - Starting the Transform stage.
+2025-01-16 20:50:05,239 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 20:50:05,240 - INFO - JSON file validation and processing complete.
+2025-01-16 20:50:05,240 - INFO - Transform stage completed successfully.
+2025-01-16 20:50:05,240 - INFO - Processing TXT file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 20:50:05,330 - INFO - Completed processing TXT file.
+2025-01-16 20:50:05,330 - INFO - Starting the Load stage.
+2025-01-16 20:50:05,330 - INFO - Load stage completed successfully. Results saved to ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 20:50:05,330 - INFO - ETL pipeline completed successfully.
+2025-01-16 20:50:05,338 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 20:50:05,338 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,373 - INFO - Running Test: Under 40 Years Old
+2025-01-16 20:51:31,405 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,405 - INFO - Starting the extract stage
+2025-01-16 20:51:31,407 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,407 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:51:31,407 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:51:31,407 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:51:31,407 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 20:51:31,407 - INFO - Starting the Transform stage.
+2025-01-16 20:51:31,407 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 20:51:31,409 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 20:51:31,409 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,412 - INFO - Test Under 40 Years Old failed as expected with error: 2025-01-16 20:51:31,405 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,405 - INFO - Starting the extract stage
+2025-01-16 20:51:31,407 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,407 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:51:31,407 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 20:51:31,407 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 20:51:31,407 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 20:51:31,407 - INFO - Starting the Transform stage.
+2025-01-16 20:51:31,407 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 20:51:31,409 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 20:51:31,409 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,413 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,413 - INFO - Running Test: Dates Out of Range
+2025-01-16 20:51:31,435 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,435 - INFO - Starting the extract stage
+2025-01-16 20:51:31,436 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,436 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:51:31,436 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:51:31,436 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:51:31,436 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 20:51:31,436 - INFO - Starting the Transform stage.
+2025-01-16 20:51:31,436 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 20:51:31,437 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 20:51:31,437 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,441 - INFO - Test Dates Out of Range failed as expected with error: 2025-01-16 20:51:31,435 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,435 - INFO - Starting the extract stage
+2025-01-16 20:51:31,436 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,436 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:51:31,436 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 20:51:31,436 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 20:51:31,436 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 20:51:31,436 - INFO - Starting the Transform stage.
+2025-01-16 20:51:31,436 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 20:51:31,437 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 20:51:31,437 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,441 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,441 - INFO - Running Test: Fields Exceed Length
+2025-01-16 20:51:31,462 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,462 - INFO - Starting the extract stage
+2025-01-16 20:51:31,462 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,462 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:51:31,462 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:51:31,462 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:51:31,462 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 20:51:31,462 - INFO - Starting the Transform stage.
+2025-01-16 20:51:31,462 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 20:51:31,463 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 20:51:31,463 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,466 - ERROR - Test Fields Exceed Length failed with unexpected error: 2025-01-16 20:51:31,462 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,462 - INFO - Starting the extract stage
+2025-01-16 20:51:31,462 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,462 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:51:31,462 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 20:51:31,462 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 20:51:31,462 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 20:51:31,462 - INFO - Starting the Transform stage.
+2025-01-16 20:51:31,462 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 20:51:31,463 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 20:51:31,463 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,466 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,466 - INFO - Running Test: Invalid UUID
+2025-01-16 20:51:31,487 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,487 - INFO - Starting the extract stage
+2025-01-16 20:51:31,487 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,487 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:51:31,487 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:51:31,487 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 20:51:31,487 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,491 - INFO - Test Invalid UUID failed as expected with error: 2025-01-16 20:51:31,487 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,487 - INFO - Starting the extract stage
+2025-01-16 20:51:31,487 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,487 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:51:31,487 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 20:51:31,487 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 20:51:31,487 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,491 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,491 - INFO - Running Test: Missing File
+2025-01-16 20:51:31,511 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,511 - INFO - Starting the extract stage
+2025-01-16 20:51:31,511 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,512 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:51:31,512 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:51:31,512 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 20:51:31,512 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,515 - INFO - Test Missing File failed as expected with error: 2025-01-16 20:51:31,511 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,511 - INFO - Starting the extract stage
+2025-01-16 20:51:31,511 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,512 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:51:31,512 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 20:51:31,512 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 20:51:31,512 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,515 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,515 - INFO - Running Test: Missing context_path
+2025-01-16 20:51:31,536 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,536 - INFO - Starting the extract stage
+2025-01-16 20:51:31,537 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,537 - ERROR - Invalid or missing context_path:
+2025-01-16 20:51:31,537 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 20:51:31,537 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 20:51:31,537 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:51:31,540 - INFO - Test Missing context_path failed as expected with error: 2025-01-16 20:51:31,536 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,536 - INFO - Starting the extract stage
+2025-01-16 20:51:31,537 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,537 - ERROR - Invalid or missing context_path:
+2025-01-16 20:51:31,537 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 20:51:31,537 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 20:51:31,537 - ERROR - Pipeline exiting due to validation error
+2025-01-16 20:51:31,540 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,540 - INFO - Running Test: Extra Files
+2025-01-16 20:51:31,560 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,560 - INFO - Starting the extract stage
+2025-01-16 20:51:31,561 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,561 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 20:51:31,561 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 20:51:31,561 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 20:51:31,561 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,564 - INFO - Test Extra Files failed as expected with error: 2025-01-16 20:51:31,560 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,560 - INFO - Starting the extract stage
+2025-01-16 20:51:31,561 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,561 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 20:51:31,561 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 20:51:31,561 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 20:51:31,561 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,564 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,564 - INFO - Running Test: path doesnt have same uuid
+2025-01-16 20:51:31,584 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,584 - INFO - Starting the extract stage
+2025-01-16 20:51:31,585 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,585 - ERROR - Results path and context path must share the same base directory: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 20:51:31,585 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 20:51:31,585 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,588 - INFO - Test path doesnt have same uuid failed as expected with error: 2025-01-16 20:51:31,584 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,584 - INFO - Starting the extract stage
+2025-01-16 20:51:31,585 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,585 - ERROR - Results path and context path must share the same base directory: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76364/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76365/out/ 
+2025-01-16 20:51:31,585 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 20:51:31,585 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,588 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,588 - INFO - Running Test: results path doesnt end with out
+2025-01-16 20:51:31,608 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,608 - INFO - Starting the extract stage
+2025-01-16 20:51:31,608 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,608 - ERROR - Results path does not end with '/out/'
+2025-01-16 20:51:31,608 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 20:51:31,608 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,611 - INFO - Test results path doesnt end with out failed as expected with error: 2025-01-16 20:51:31,608 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,608 - INFO - Starting the extract stage
+2025-01-16 20:51:31,608 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,608 - ERROR - Results path does not end with '/out/'
+2025-01-16 20:51:31,608 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 20:51:31,608 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 20:51:31,612 - INFO - --------------------------------------------------
+2025-01-16 20:51:31,612 - INFO - Running Test: Valid Input
+2025-01-16 20:51:31,633 - INFO - ETL pipeline started.
+2025-01-16 20:51:31,633 - INFO - Starting the extract stage
+2025-01-16 20:51:31,635 - INFO - Validating input JSON structure.
+2025-01-16 20:51:31,635 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:51:31,635 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 20:51:31,636 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 20:51:31,636 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 20:51:31,636 - INFO - Starting the Transform stage.
+2025-01-16 20:51:31,636 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 20:51:31,638 - INFO - JSON file validation and processing complete.
+2025-01-16 20:51:31,638 - INFO - Transform stage completed successfully.
+2025-01-16 20:51:31,638 - INFO - Processing TXT file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 20:51:31,730 - INFO - Completed processing TXT file.
+2025-01-16 20:51:31,731 - INFO - Starting the Load stage.
+2025-01-16 20:51:31,735 - INFO - Load stage completed successfully. Results saved to ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 20:51:31,735 - INFO - ETL pipeline completed successfully.
+2025-01-16 20:51:31,743 - INFO - Test Valid Input passed unexpectedly!
+2025-01-16 20:51:31,743 - INFO - --------------------------------------------------

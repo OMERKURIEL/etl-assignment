@@ -17,10 +17,12 @@ def run_pipeline(input_file):
     ("missing_file_input.json", "Expected exactly 2 files in"),
     ("missing_context_path_input.json", "Invalid or missing context path"),
     ("extra_files_input.json", "Expected exactly 2 files in"),
+    ("results_path_doesnt_end_with_out.json", "Results path does not end with '/out/'"),
+    ("paths_doesnt_have_common_uuid.json", f"Results path and context path must share the same base directory:")
 ])
 def test_pipeline_edge_cases(test_input, expected_error):
     """Test the ETL pipeline for various edge cases."""
-    input_file_path = os.path.join("tests", test_input)
+    input_file_path = os.path.join("inputs", test_input)
     result = run_pipeline(input_file_path)
 
     assert result.returncode != 0, f"Pipeline should fail for {test_input}"
@@ -28,7 +30,7 @@ def test_pipeline_edge_cases(test_input, expected_error):
 
 def test_pipeline_success():
     """Test the ETL pipeline with valid input to ensure success."""
-    valid_input_file = "tests/valid_input.json"
+    valid_input_file = "inputs/valid_input.json"
     result = run_pipeline(valid_input_file)
 
     assert result.returncode == 0, "Pipeline should succeed with valid input"
@@ -38,7 +40,7 @@ def test_valid_input():
     """
     Test the pipeline with a valid input file.
     """
-    input_file = "tests/valid_input.json"
+    input_file = "inputs/valid_input.json"
     result = subprocess.run(
         ["python", "pipeline.py", input_file],
         capture_output=True,

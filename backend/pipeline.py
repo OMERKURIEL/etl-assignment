@@ -9,7 +9,12 @@ import sys
 
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("tests/etl_pipeline.log"),  # Save logs to a file
+        logging.StreamHandler()     # Also print logs to console
+    ]
+
 )
 
 
@@ -34,7 +39,7 @@ def extract(input_json):
             logging.debug(f"Loaded input JSON: {input_data}")
 
         # Validate and load input paths
-        context_path, results_path = input_handler.validate_and_load_input(input_data)
+        context_path, results_path = input_handler.validate_input_file(input_data)
         logging.info(f"Validated paths: context_path={context_path}, results_path={results_path}")
 
         # validate the files existence, format, naming in the context path
@@ -113,6 +118,10 @@ def load(context_path, results_path, txt_results, json_result, participant_files
             }
         ]
     }
+    # if the results path doesn't exist, create it
+    if not os.path.exists(results_path):
+        logging.info(f"creating results directory at {results_path}")
+        os.makedirs(results_path)
     # write the merged result into a file in the results_path
     output_file_path = os.path.join(results_path, f"{participant_id}.json")
     with open(output_file_path, 'w') as output_file:
