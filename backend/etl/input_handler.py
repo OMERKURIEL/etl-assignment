@@ -15,21 +15,18 @@ def validate_input_file(input_data):
 
         # validate context path is included in the input and exists
         if not context_path or not os.path.exists(context_path):
-            logging.error(f"Invalid or missing context_path:")
-            raise FileNotFoundError(f"Invalid or missing context path: {context_path}")
+            raise (FileNotFoundError(f"Invalid or missing context path: {context_path}"))
 
         # validate result path is given in the input argument
         if not results_path:
-            logging.error("Results path is not specified")
             raise ValueError("Results path is not specified.")
 
+        # validate results path is named "out"
         if not results_path.endswith("/out/"):
-            logging.error(f"Results path does not end with '/out/'")
             raise ValueError("Results path does not end with '/out/'")
 
+        # validate results path is a subdirectory of the context path
         if not results_path[:-4] == context_path:
-            logging.error(f"Results path and context path must share the same base directory: "
-                         f"context_path={context_path}, results_path={results_path} ")
             raise ValueError("Context path and results path must share the same base directory")
 
         logging.info(f"Validation successful for context_path: {context_path}, results_path: {results_path}")
@@ -39,6 +36,7 @@ def validate_input_file(input_data):
     except Exception as e:
         logging.error(f"Input validation failed: {e}")
         raise
+
 
 def validate_context_path_files(context_path, results_path):
     """

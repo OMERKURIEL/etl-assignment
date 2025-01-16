@@ -18,7 +18,11 @@ def run_pipeline(input_file):
     ("missing_context_path_input.json", "Invalid or missing context path"),
     ("extra_files_input.json", "Expected exactly 2 files in"),
     ("results_path_doesnt_end_with_out.json", "Results path does not end with '/out/'"),
-    ("paths_doesnt_have_common_uuid.json", f"Results path and context path must share the same base directory:")
+    ("paths_doesnt_have_common_uuid.json", f"Context path and results path must share the same base directory"),
+    ("missing_results_path_input.json", "Results path is not specified."),
+    ("files_with_incorrect_extension.json", "File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'."),
+    ("wrong_naming_convention.json", "Invalid file naming format: f3324a99-8a63-4ada-9d1d-562f84c76312.json")
+
 ])
 def test_pipeline_edge_cases(test_input, expected_error):
     """Test the ETL pipeline for various edge cases."""
