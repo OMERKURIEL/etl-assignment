@@ -127,7 +127,6 @@ def compute_longest_common_subsequence(sequences):
                 max_sequence_count = len(combo)
 
 
-        max_indices = []
         for idx, sequence in enumerate(sequences):
             if max_lcs in sequence:
                 max_indices.append(idx+1)

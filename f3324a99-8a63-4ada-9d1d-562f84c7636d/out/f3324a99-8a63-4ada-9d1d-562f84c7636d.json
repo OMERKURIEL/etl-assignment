@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "start_at": "2025-01-14T18:29:31.591266",
-        "end_at": "2025-01-14T18:29:31.727076",
+        "start_at": "2025-01-16T08:49:53.069154",
+        "end_at": "2025-01-16T08:49:53.192649",
         "context_path": "./f3324a99-8a63-4ada-9d1d-562f84c7636d/",
         "results_path": "./f3324a99-8a63-4ada-9d1d-562f84c7636d/out/"
     },
@@ -41,7 +41,7 @@
                         }
                     },
                     {
-                        "gc_content": 48.48,
+                        "gc_content": 48.39,
                         "codons": {
                             "ATC": 1,
                             "GAT": 2,
@@ -51,36 +51,25 @@
                             "CTA": 1,
                             "GCT": 1,
                             "CGA": 1,
-                            "TCG": 1,
-                            "ATG": 1
-                        }
-                    },
-                    {
-                        "gc_content": 40.91,
-                        "codons": {
-                            "ATC": 1,
-                            "GGT": 1,
-                            "AAA": 2,
-                            "TGC": 1,
-                            "CTG": 1,
-                            "GAT": 1
+                            "TCG": 1
                         }
                     },
                     {
                         "gc_content": 0.0,
                         "codons": {
-                            "AAA": 1
+                            "AAA": 2
                         }
                     }
                 ],
                 "most_common_codon": "GAT",
                 "lcs": {
-                    "value": "ATCGATCGTAGCTAGCTAGCTGATCGATCGAT",
+                    "value": "ATCGATCGTAGCTAGCTAGCTGATCGATCGA",
                     "sequences": [
                         1,
+                        2,
                         3
                     ],
-                    "length": 32
+                    "length": 31
                 }
             },
             "JSON": {
@@ -98,7 +87,7 @@
                 "sample_metadata": {
                     "sample_id": "SAMP987654",
                     "sample_type": "Saliva",
-                    "collection_date": "2014-12-01",
+                    "collection_date": "2014-01-12",
                     "data_file": "f3324a99-8a63-4ada-9d1d-562f84c7636d.txt"
                 },
                 "analysis_metadata": {

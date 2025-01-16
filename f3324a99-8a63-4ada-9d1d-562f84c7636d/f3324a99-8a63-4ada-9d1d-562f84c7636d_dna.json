@@ -13,7 +13,7 @@
     "sample_metadata": {
         "sample_id": "SAMP987654",
         "sample_type": "Saliva",
-        "collection_date": "2014-12-01",
+        "collection_date": "2014-01-12",
         "data_file": "f3324a99-8a63-4ada-9d1d-562f84c7636d.txt"
     },
     "analysis_metadata": {
@@ -29,6 +29,8 @@
         }
     },
     "individual_metadata": {
+        "_individual_id": "IND123456",
+        "_name": "John Smith",
         "date_of_birth": "1984-05-15",
         "gender": "Male",
         "ethnicity": "Caucasian",
