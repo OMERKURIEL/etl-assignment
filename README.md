@@ -61,7 +61,7 @@ Follow these steps to set up the backend ETL pipeline and the optional frontend 
 
 - To process an input file manually:
 - from the home_assignment directory run:
-    `python pipeline.py ../inputs/valid_input.json`
+    `python backend/pipeline.py inputs/valid_input.json`
 
 This will validate, transform, and load genomic data from the input file.
 
