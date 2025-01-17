@@ -1,3 +1,4 @@
+from collections import defaultdict
 from multiprocessing import Pool, cpu_count
 from itertools import combinations
 import logging
@@ -61,21 +62,20 @@ def compute_most_frequent_codon(sequences):
     return most_frequent_codon
 
 
-def find_lcs_pair(seq1, seq2):
+def find_lcs_pair(sequence1, sequence2):
     """
-    Find the longest common subsequence (LCS) between two DNA sequences.
+    Find the longest common subsequence (LCS) between a pair of DNA sequences.
 
-    :param seq1: First DNA sequence.
-    :param seq2: Second DNA sequence.
+    :param sequence1: First DNA sequence.
+    :param sequence2: Second DNA sequence.
     :return: The longest common subsequence.
     """
-    m, n = len(seq1), len(seq2)
+    m, n = len(sequence1), len(sequence2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
 
-    # Fill the dp table
     for i in range(1, m + 1):
         for j in range(1, n + 1):
-            if seq1[i - 1] == seq2[j - 1]:
+            if sequence1[i - 1] == sequence2[j - 1]:
                 dp[i][j] = dp[i - 1][j - 1] + 1
             else:
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
@@ -84,8 +84,8 @@ def find_lcs_pair(seq1, seq2):
     lcs = []
     i, j = m, n
     while i > 0 and j > 0:
-        if seq1[i - 1] == seq2[j - 1]:
-            lcs.append(seq1[i - 1])
+        if sequence1[i - 1] == sequence2[j - 1]:
+            lcs.append(sequence1[i - 1])
             i -= 1
             j -= 1
         elif dp[i - 1][j] > dp[i][j - 1]:
@@ -95,71 +95,55 @@ def find_lcs_pair(seq1, seq2):
 
     return ''.join(reversed(lcs))
 
+def process_lcs_pair(pair):
+    """Helper function for multiprocessing: Compute LCS for a sequence pair."""
+    seq1, seq2 = pair
+    return find_lcs_pair(seq1, seq2)
+
 
 def compute_longest_common_subsequence(sequences):
     """
     Find the longest common subsequence among all possible pairs combinations of sequences.
-    This is because the LCS is necessarily a common LCS to at least two sequences.
-
+    This search is among pairs since the LCS is necessarily a common LCS to at least two sequences.
     :param sequences: A list of strings, each representing a DNA sequence.
     :return: a dictionary containing the LCS value, list of sequence indices, and length of the lcs.
     """
     if not sequences:
         return {"value": "", "sequences": [], "length": 0}
 
-    max_lcs = ""
-    max_indices = []
-    max_sequence_count = 0
+    # Initialize a dictionary to count occurrences of each LCS
+    lcs_counts = defaultdict(int)
 
-    # Try all possible pair combinations of sequences
-    for subset_size in range(2,3):
-        for combo in combinations(range(len(sequences)), subset_size):
-            # Find LCS for current combination
-            current_lcs = sequences[combo[0]]
-            for i in range(1, len(combo)):
-                current_lcs = find_lcs_pair(current_lcs, sequences[combo[i]])
+    # Generate LCS for all possible pairs of sequences
+    sequence_pairs = [(sequences[i], sequences[j]) for i, j in combinations(range(len(sequences)), 2)]
 
-                # Verify this LCS appears in all sequences in the combination
-            is_valid = True
-            for idx in combo:
-                if not is_subsequence(current_lcs, sequences[idx]):
-                    is_valid = False
-                    break
+    # Use multiprocessing to process sequence pairs in parallel
+    with Pool(processes=cpu_count()) as pool:
+        lcs_results = pool.map(process_lcs_pair, sequence_pairs)
 
-            if not is_valid:
-                continue
-                # Update if this is a better solution
-                # Prefer more sequences when lengths are equal
-            if (len(current_lcs) > len(max_lcs)) or \
-                    (len(current_lcs) == len(max_lcs) and len(combo) > max_sequence_count):
-                max_lcs = current_lcs
-                max_sequence_count = len(combo)
+    # Count LCS occurrences
+    for lcs in lcs_results:
+        if lcs:
+            lcs_counts[lcs] += 1
 
+    if not lcs_counts:
+        return {"value": "", "sequences": [], "length": 0}
 
-        for idx, sequence in enumerate(sequences):
-            if max_lcs in sequence:
-                max_indices.append(idx+1)
+    # Find the longest LCS first
+    max_length = max(len(lcs) for lcs in lcs_counts)
 
-        return {
-            "value": max_lcs,
-            "sequences": max_indices,
-            "length": len(max_lcs)
-        }
+    # construct a list of all the LCS, If multiple LCSs of the same length exist, choose the most frequent one
+    longest_lcs_candidates = [lcs for lcs in lcs_counts if len(lcs) == max_length]
+    best_lcs = max(longest_lcs_candidates, key=lambda x: lcs_counts[x])
 
+    # Find sequences where this LCS appears
+    sequence_indices = [idx + 1 for idx, sequence in enumerate(sequences) if best_lcs in sequence]
 
-def is_subsequence(shorter, longer):
-    """Check if shorter is a subsequence of longer."""
-    if not shorter:
-        return True
-
-    j = 0  # Index for shorter
-    for i in range(len(longer)):
-        if longer[i] == shorter[j]:
-            j += 1
-            if j == len(shorter):
-                return True
-    return False
-
+    return {
+        "value": best_lcs,
+        "sequences": sequence_indices,
+        "length": len(best_lcs)
+    }
 
 def process_sequence(sequence):
     """

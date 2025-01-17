@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "start_at": "2025-01-17T13:44:04.159247",
-        "end_at": "2025-01-17T13:44:04.242368",
+        "start_at": "2025-01-17T17:00:39.092613",
+        "end_at": "2025-01-17T17:00:39.234843",
         "context_path": "backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/",
         "results_path": "backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/"
     },
@@ -41,23 +41,9 @@
                         }
                     },
                     {
-                        "gc_content": 48.39,
-                        "codons": {
-                            "ATC": 1,
-                            "GAT": 2,
-                            "CGT": 1,
-                            "AGC": 1,
-                            "TAG": 1,
-                            "CTA": 1,
-                            "GCT": 1,
-                            "CGA": 1,
-                            "TCG": 1
-                        }
-                    },
-                    {
                         "gc_content": 0.0,
                         "codons": {
-                            "AAA": 2
+                            "AAA": 4
                         }
                     }
                 ],
@@ -66,8 +52,7 @@
                     "value": "ATCGATCGTAGCTAGCTAGCTGATCGATCGA",
                     "sequences": [
                         1,
-                        2,
-                        3
+                        2
                     ],
                     "length": 31
                 }

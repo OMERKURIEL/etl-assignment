@@ -1,4 +1,4 @@
-# **ETL Pipeline for Genomic Data Processing**
+# **ETL Pipeline for Genetic Data Processing**
 
 This project is an ETL (Extract, Transform, Load) pipeline designed for processing genomic data. 
 The pipeline performs data extraction, validation, and transformation from structured .json and .txt files, and loads it to a path given as an argument.
@@ -49,8 +49,9 @@ Follow these steps to set up the backend ETL pipeline and the optional frontend 
 
 #### **Installation**:
 - Clone the repository:
-    git clone https://github.com/OMERKURIEL/etl-assignment.git
-    cd home_assignment
+    `git clone https://github.com/OMERKURIEL/etl-assignment.git`
+- Move to the cloned directory:
+   ` cd etl-assignment`
 - Create a virtual environment and activate it:
     `python -m venv venv`
     `source venv/bin/activate`  # On Windows: venv\Scripts\activate
@@ -60,13 +61,13 @@ Follow these steps to set up the backend ETL pipeline and the optional frontend 
 #### Running the ETL Pipeline:
 
 - To process an input file manually:
-- from the home_assignment directory run:
+- from the etl-assignment directory run:
     `python backend/pipeline.py inputs/valid_input.json`
 
 This will validate, transform, and load genomic data from the input file.
 
 ##### Running tests:
-- from the home_assignment directory, run unit tests for input validation and ETL logic:
+- from the etl-_assignment directory, run unit tests for input validation and ETL logic:
 
     `pytest backend/tests/run_tests.py`
     `python backend/tests/tests.py`
@@ -77,10 +78,10 @@ This will validate, transform, and load genomic data from the input file.
 2. [ ] npm package manager
 
 ##### **Installation & Running the UI**:
-1. navigate to the frontend folder `cd frontend`
+1. nNavigate to the frontend folder `cd frontend`
 2. Install dependencies `npm install`
 3. Start the frontend development server: `npm start`
-4. Navigate to the backend folder `cd ../backend`
+4. In an additional terminal, Navigate to the backend folder 
 5. Start the backend development server `python app.py`
 
 The interface should now be accessible at http://localhost:3000
