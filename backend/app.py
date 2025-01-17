@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-TESTS_DIRECTORY = "./inputs/"  # Directory containing the JSON files
+TESTS_DIRECTORY = "../inputs/"  # Directory containing the JSON files
 
 @app.route("/list-files", methods=["GET"])
 def list_files():
