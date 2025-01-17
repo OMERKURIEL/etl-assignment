@@ -10869,3 +10869,396 @@ RuntimeError: No active exception to reraise
 2025-01-16 22:39:59,959 - INFO - Load stage completed successfully. Results saved to ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
 2025-01-16 22:39:59,959 - INFO - ETL pipeline completed successfully.
 2025-01-16 22:39:59,967 - INFO - --------------------------------------------------
+2025-01-16 22:47:45,698 - INFO - ETL pipeline started.
+2025-01-16 22:47:45,700 - INFO - Starting the extract stage
+2025-01-16 22:47:45,700 - INFO - Validating input JSON structure.
+2025-01-16 22:47:45,700 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-16 22:47:45,700 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-16 22:47:45,700 - ERROR - File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'.
+2025-01-16 22:47:45,700 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,149 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,150 - INFO - Starting the extract stage
+2025-01-16 22:48:05,150 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,150 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-16 22:48:05,150 - ERROR - File Error: Invalid or missing context path: None
+2025-01-16 22:48:05,150 - ERROR - Pipeline exiting due to validation error
+2025-01-16 22:48:05,177 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,177 - INFO - Starting the extract stage
+2025-01-16 22:48:05,177 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,177 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-16 22:48:05,177 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-16 22:48:05,178 - ERROR - File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'.
+2025-01-16 22:48:05,178 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,201 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,201 - INFO - Starting the extract stage
+2025-01-16 22:48:05,202 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,202 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 22:48:05,202 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-16 22:48:05,202 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-16 22:48:05,202 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-16 22:48:05,202 - INFO - Starting the Transform stage.
+2025-01-16 22:48:05,202 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-16 22:48:05,205 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-16 22:48:05,205 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,228 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,228 - INFO - Starting the extract stage
+2025-01-16 22:48:05,229 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,229 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 22:48:05,229 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-16 22:48:05,229 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-16 22:48:05,229 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,251 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,252 - INFO - Starting the extract stage
+2025-01-16 22:48:05,252 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,252 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/out/
+2025-01-16 22:48:05,252 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/out/
+2025-01-16 22:48:05,252 - ERROR - Invalid file naming format: f3324a99-8a63-4ada-9d1d-562f84c76312.json
+2025-01-16 22:48:05,252 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,275 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,275 - INFO - Starting the extract stage
+2025-01-16 22:48:05,275 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,275 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 22:48:05,275 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-16 22:48:05,276 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-16 22:48:05,276 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,298 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,298 - INFO - Starting the extract stage
+2025-01-16 22:48:05,299 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,299 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-16 22:48:05,299 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-16 22:48:05,299 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-16 22:48:05,299 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 22:48:05,299 - INFO - Starting the Transform stage.
+2025-01-16 22:48:05,299 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 22:48:05,301 - INFO - JSON file validation and processing complete.
+2025-01-16 22:48:05,301 - INFO - Transform stage completed successfully.
+2025-01-16 22:48:05,301 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 22:48:05,379 - INFO - Completed processing TXT file.
+2025-01-16 22:48:05,379 - INFO - Starting the Load stage.
+2025-01-16 22:48:05,379 - INFO - Load stage completed successfully. Results saved to /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 22:48:05,379 - INFO - ETL pipeline completed successfully.
+2025-01-16 22:48:05,408 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,408 - INFO - Starting the extract stage
+2025-01-16 22:48:05,408 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,408 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-16 22:48:05,408 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,431 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,431 - INFO - Starting the extract stage
+2025-01-16 22:48:05,431 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,432 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 22:48:05,432 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-16 22:48:05,432 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-16 22:48:05,432 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-16 22:48:05,432 - INFO - Starting the Transform stage.
+2025-01-16 22:48:05,432 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-16 22:48:05,433 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-16 22:48:05,433 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,456 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,456 - INFO - Starting the extract stage
+2025-01-16 22:48:05,457 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,457 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 22:48:05,457 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-16 22:48:05,457 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-16 22:48:05,457 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-16 22:48:05,457 - INFO - Starting the Transform stage.
+2025-01-16 22:48:05,457 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-16 22:48:05,457 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-16 22:48:05,457 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,480 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,480 - INFO - Starting the extract stage
+2025-01-16 22:48:05,481 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,481 - ERROR - Input validation failed: Results path is not specified.
+2025-01-16 22:48:05,481 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,503 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,504 - INFO - Starting the extract stage
+2025-01-16 22:48:05,504 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,504 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-16 22:48:05,504 - ERROR - Exiting the pipeline due to validation error
+2025-01-16 22:48:05,527 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,527 - INFO - Starting the extract stage
+2025-01-16 22:48:05,527 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,527 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 22:48:05,527 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-16 22:48:05,527 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-16 22:48:05,527 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-16 22:48:05,527 - INFO - Starting the Transform stage.
+2025-01-16 22:48:05,527 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-16 22:48:05,529 - INFO - JSON file validation and processing complete.
+2025-01-16 22:48:05,529 - INFO - Transform stage completed successfully.
+2025-01-16 22:48:05,529 - INFO - Processing TXT file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-16 22:48:05,578 - INFO - Completed processing TXT file.
+2025-01-16 22:48:05,578 - INFO - Starting the Load stage.
+2025-01-16 22:48:05,580 - INFO - Load stage completed successfully. Results saved to ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-16 22:48:05,580 - INFO - ETL pipeline completed successfully.
+2025-01-16 22:48:05,608 - INFO - ETL pipeline started.
+2025-01-16 22:48:05,608 - INFO - Starting the extract stage
+2025-01-16 22:48:05,609 - INFO - Validating input JSON structure.
+2025-01-16 22:48:05,609 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 22:48:05,609 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-16 22:48:05,609 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-16 22:48:05,609 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 07:55:57,492 - INFO - ETL pipeline started.
+2025-01-17 07:55:57,493 - INFO - Starting the extract stage
+2025-01-17 07:55:57,493 - INFO - Validating input JSON structure.
+2025-01-17 07:55:57,493 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 07:55:57,493 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 07:55:57,493 - ERROR - File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'.
+2025-01-17 07:55:57,493 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 07:55:57,518 - INFO - ETL pipeline started.
+2025-01-17 07:55:57,518 - INFO - Starting the extract stage
+2025-01-17 07:55:57,518 - INFO - Validating input JSON structure.
+2025-01-17 07:55:57,518 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-17 07:55:57,518 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-17 07:55:57,519 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-17 07:55:57,519 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 07:55:57,542 - INFO - ETL pipeline started.
+2025-01-17 07:55:57,542 - INFO - Starting the extract stage
+2025-01-17 07:55:57,544 - INFO - Validating input JSON structure.
+2025-01-17 07:55:57,544 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-17 07:55:57,544 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-17 07:55:57,544 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-17 07:55:57,544 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 07:55:57,568 - INFO - ETL pipeline started.
+2025-01-17 07:55:57,568 - INFO - Starting the extract stage
+2025-01-17 07:55:57,568 - INFO - Validating input JSON structure.
+2025-01-17 07:55:57,568 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-17 07:55:57,568 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 07:55:57,591 - INFO - ETL pipeline started.
+2025-01-17 07:55:57,591 - INFO - Starting the extract stage
+2025-01-17 07:55:57,592 - INFO - Validating input JSON structure.
+2025-01-17 07:55:57,592 - ERROR - Input validation failed: Results path is not specified.
+2025-01-17 07:55:57,592 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 07:57:20,020 - INFO - ETL pipeline started.
+2025-01-17 07:57:20,020 - INFO - Starting the extract stage
+2025-01-17 07:57:20,020 - INFO - Validating input JSON structure.
+2025-01-17 07:57:20,020 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 07:57:20,020 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 07:57:20,021 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-17 07:57:20,021 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 07:57:20,021 - INFO - Starting the Transform stage.
+2025-01-17 07:57:20,021 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 07:57:20,025 - INFO - JSON file validation and processing complete.
+2025-01-17 07:57:20,025 - INFO - Transform stage completed successfully.
+2025-01-17 07:57:20,025 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 07:57:20,091 - ERROR - Validation Error: max() iterable argument is empty
+2025-01-17 07:57:20,094 - ERROR - Pipeline exiting due to validation error
+2025-01-17 07:58:20,721 - INFO - ETL pipeline started.
+2025-01-17 07:58:20,722 - INFO - Starting the extract stage
+2025-01-17 07:58:20,722 - INFO - Validating input JSON structure.
+2025-01-17 07:58:20,722 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 07:58:20,722 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 07:58:20,723 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-17 07:58:20,723 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 07:58:20,723 - INFO - Starting the Transform stage.
+2025-01-17 07:58:20,723 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 07:58:20,725 - INFO - JSON file validation and processing complete.
+2025-01-17 07:58:20,726 - INFO - Transform stage completed successfully.
+2025-01-17 07:58:20,726 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 07:58:20,754 - ERROR - Validation Error: max() iterable argument is empty
+2025-01-17 07:58:20,754 - ERROR - Pipeline exiting due to validation error
+2025-01-17 08:06:31,798 - INFO - ETL pipeline started.
+2025-01-17 08:06:31,798 - INFO - Starting the extract stage
+2025-01-17 08:06:31,799 - INFO - Validating input JSON structure.
+2025-01-17 08:06:31,799 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:06:31,799 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:06:31,799 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-17 08:06:31,799 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 08:06:31,799 - INFO - Starting the Transform stage.
+2025-01-17 08:06:31,800 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 08:06:31,802 - INFO - JSON file validation and processing complete.
+2025-01-17 08:06:31,802 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 08:06:31,840 - ERROR - Validation Error: max() iterable argument is empty
+2025-01-17 08:06:31,840 - ERROR - Pipeline exiting due to validation error
+2025-01-17 08:10:21,312 - INFO - ETL pipeline started.
+2025-01-17 08:10:21,313 - INFO - Starting the extract stage
+2025-01-17 08:10:21,313 - INFO - Validating input JSON structure.
+2025-01-17 08:10:21,313 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-17 08:10:21,313 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-17 08:10:21,313 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-17 08:10:21,313 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-17 08:10:21,313 - INFO - Starting the Transform stage.
+2025-01-17 08:10:21,314 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-17 08:10:21,316 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-17 08:10:21,316 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:10:41,795 - INFO - ETL pipeline started.
+2025-01-17 08:10:41,795 - INFO - Starting the extract stage
+2025-01-17 08:10:41,796 - INFO - Validating input JSON structure.
+2025-01-17 08:10:41,796 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:10:41,796 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:10:41,796 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-17 08:10:41,796 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 08:10:41,796 - INFO - Starting the Transform stage.
+2025-01-17 08:10:41,797 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 08:10:41,799 - INFO - JSON file validation and processing complete.
+2025-01-17 08:10:41,799 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 08:10:41,799 - ERROR - Validation Error: TXT file /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt is empty.
+2025-01-17 08:10:41,799 - ERROR - Validation Error in TXT processing: TXT file /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt is empty.
+2025-01-17 08:10:41,799 - ERROR - Pipeline exiting due to validation error
+2025-01-17 08:11:19,320 - INFO - ETL pipeline started.
+2025-01-17 08:11:19,321 - INFO - Starting the extract stage
+2025-01-17 08:11:19,321 - INFO - Validating input JSON structure.
+2025-01-17 08:11:19,321 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:11:19,321 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:11:19,322 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-17 08:11:19,322 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 08:11:19,322 - INFO - Starting the Transform stage.
+2025-01-17 08:11:19,322 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 08:11:19,324 - INFO - JSON file validation and processing complete.
+2025-01-17 08:11:19,324 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 08:11:19,324 - ERROR - Validation Error: TXT file /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt is empty.
+2025-01-17 08:11:19,324 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:13:46,905 - INFO - ETL pipeline started.
+2025-01-17 08:13:46,905 - INFO - Starting the extract stage
+2025-01-17 08:13:46,906 - INFO - Validating input JSON structure.
+2025-01-17 08:13:46,906 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-17 08:13:46,906 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-17 08:13:46,906 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-17 08:13:46,906 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 08:13:46,906 - INFO - Starting the Transform stage.
+2025-01-17 08:13:46,906 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 08:13:46,909 - INFO - JSON file validation and processing complete.
+2025-01-17 08:13:46,909 - INFO - Processing TXT file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 08:13:46,993 - INFO - Completed processing TXT file.
+2025-01-17 08:13:46,994 - INFO - Transform stage completed successfully.
+2025-01-17 08:13:46,994 - INFO - Starting the Load stage.
+2025-01-17 08:13:46,995 - INFO - Load stage completed successfully. Results saved to ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-17 08:13:46,995 - INFO - ETL pipeline completed successfully.
+2025-01-17 08:43:22,238 - INFO - ETL pipeline started.
+2025-01-17 08:43:22,239 - INFO - Starting the extract stage
+2025-01-17 08:43:22,239 - INFO - Validating input JSON structure.
+2025-01-17 08:43:22,239 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-17 08:43:22,239 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-17 08:43:22,239 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-17 08:43:22,239 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:44:29,872 - INFO - ETL pipeline started.
+2025-01-17 08:44:29,872 - INFO - Starting the extract stage
+2025-01-17 08:44:29,873 - INFO - Validating input JSON structure.
+2025-01-17 08:44:29,873 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 08:44:29,873 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 08:44:29,873 - ERROR - File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'.
+2025-01-17 08:44:29,873 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:12,142 - INFO - ETL pipeline started.
+2025-01-17 08:45:12,142 - INFO - Starting the extract stage
+2025-01-17 08:45:12,142 - INFO - Validating input JSON structure.
+2025-01-17 08:45:12,142 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 08:45:12,143 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 08:45:12,143 - ERROR - File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'.
+2025-01-17 08:45:12,143 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,077 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,078 - INFO - Starting the extract stage
+2025-01-17 08:45:48,078 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,078 - ERROR - Input validation failed: Invalid or missing context path: None
+2025-01-17 08:45:48,078 - ERROR - File Error: Invalid or missing context path: None
+2025-01-17 08:45:48,078 - ERROR - Pipeline exiting due to validation error
+2025-01-17 08:45:48,103 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,103 - INFO - Starting the extract stage
+2025-01-17 08:45:48,104 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,104 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 08:45:48,104 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76311/out/
+2025-01-17 08:45:48,104 - ERROR - File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'.
+2025-01-17 08:45:48,104 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,127 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,127 - INFO - Starting the extract stage
+2025-01-17 08:45:48,127 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,127 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-17 08:45:48,127 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/out/
+2025-01-17 08:45:48,127 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/
+2025-01-17 08:45:48,127 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json'}
+2025-01-17 08:45:48,127 - INFO - Starting the Transform stage.
+2025-01-17 08:45:48,127 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76367/f3324a99-8a63-4ada-9d1d-562f84c76367_dna.json
+2025-01-17 08:45:48,130 - ERROR - Participant's age '39' is less than 40 years old.
+2025-01-17 08:45:48,130 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,152 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,152 - INFO - Starting the extract stage
+2025-01-17 08:45:48,153 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,153 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-17 08:45:48,153 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/out/
+2025-01-17 08:45:48,153 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76363/, but found 3.
+2025-01-17 08:45:48,153 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,175 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,175 - INFO - Starting the extract stage
+2025-01-17 08:45:48,176 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,176 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/out/
+2025-01-17 08:45:48,176 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76312/out/
+2025-01-17 08:45:48,176 - ERROR - Invalid file naming format: f3324a99-8a63-4ada-9d1d-562f84c76312.json
+2025-01-17 08:45:48,176 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,199 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,200 - INFO - Starting the extract stage
+2025-01-17 08:45:48,200 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,200 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-17 08:45:48,200 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76361-/out/
+2025-01-17 08:45:48,200 - ERROR - Invalid participant ID in file name: f3324a99-8a63-4ada-9d1d-562f84c76361-_dna.json
+2025-01-17 08:45:48,200 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,222 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,222 - INFO - Starting the extract stage
+2025-01-17 08:45:48,223 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,223 - INFO - Validation successful for context_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:45:48,223 - INFO - Validated paths: context_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/, results_path=/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/out/
+2025-01-17 08:45:48,223 - INFO - Validation successful for files in /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/
+2025-01-17 08:45:48,223 - INFO - Validated participant files: {'.txt': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': '/Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 08:45:48,223 - INFO - Starting the Transform stage.
+2025-01-17 08:45:48,224 - INFO - Validating JSON file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 08:45:48,225 - INFO - JSON file validation and processing complete.
+2025-01-17 08:45:48,225 - INFO - Processing TXT file: /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 08:45:48,225 - ERROR - Validation Error: TXT file /Users/omerkuriel/Desktop/f3324a99-8a63-4ada-9d1d-562f84c76366/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt is empty.
+2025-01-17 08:45:48,225 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,248 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,248 - INFO - Starting the extract stage
+2025-01-17 08:45:48,249 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,249 - ERROR - Input validation failed: Results path does not end with '/out/'
+2025-01-17 08:45:48,249 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,272 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,272 - INFO - Starting the extract stage
+2025-01-17 08:45:48,272 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,272 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-17 08:45:48,272 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/out/
+2025-01-17 08:45:48,272 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/
+2025-01-17 08:45:48,272 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.txt'}
+2025-01-17 08:45:48,272 - INFO - Starting the Transform stage.
+2025-01-17 08:45:48,272 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76368/f3324a99-8a63-4ada-9d1d-562f84c76368_dna.json
+2025-01-17 08:45:48,274 - ERROR - Date '2012-12-01' in field 'collection_date' is out of range.
+2025-01-17 08:45:48,274 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,298 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,298 - INFO - Starting the extract stage
+2025-01-17 08:45:48,299 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,299 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-17 08:45:48,299 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/out/
+2025-01-17 08:45:48,299 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/
+2025-01-17 08:45:48,299 - INFO - Validated participant files: {'.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json', '.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.txt'}
+2025-01-17 08:45:48,299 - INFO - Starting the Transform stage.
+2025-01-17 08:45:48,299 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76369/f3324a99-8a63-4ada-9d1d-562f84c76369_dna.json
+2025-01-17 08:45:48,299 - ERROR - String 'Genomics Lab Inc.............................................................................' exceeds 64 characters
+2025-01-17 08:45:48,299 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,323 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,323 - INFO - Starting the extract stage
+2025-01-17 08:45:48,323 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,323 - ERROR - Input validation failed: Results path is not specified.
+2025-01-17 08:45:48,323 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,346 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,346 - INFO - Starting the extract stage
+2025-01-17 08:45:48,347 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,347 - ERROR - Input validation failed: Context path and results path must share the same base directory
+2025-01-17 08:45:48,347 - ERROR - Exiting the pipeline due to validation error
+2025-01-17 08:45:48,371 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,371 - INFO - Starting the extract stage
+2025-01-17 08:45:48,372 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,372 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-17 08:45:48,372 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/
+2025-01-17 08:45:48,372 - INFO - Validation successful for files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/
+2025-01-17 08:45:48,372 - INFO - Validated participant files: {'.txt': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt', '.json': './tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json'}
+2025-01-17 08:45:48,372 - INFO - Starting the Transform stage.
+2025-01-17 08:45:48,372 - INFO - Validating JSON file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.json
+2025-01-17 08:45:48,374 - INFO - JSON file validation and processing complete.
+2025-01-17 08:45:48,374 - INFO - Processing TXT file: ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/f3324a99-8a63-4ada-9d1d-562f84c7636d_dna.txt
+2025-01-17 08:45:48,465 - INFO - Completed processing TXT file.
+2025-01-17 08:45:48,465 - INFO - Transform stage completed successfully.
+2025-01-17 08:45:48,465 - INFO - Starting the Load stage.
+2025-01-17 08:45:48,467 - INFO - Load stage completed successfully. Results saved to ./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/f3324a99-8a63-4ada-9d1d-562f84c7636d.json
+2025-01-17 08:45:48,467 - INFO - ETL pipeline completed successfully.
+2025-01-17 08:45:48,498 - INFO - ETL pipeline started.
+2025-01-17 08:45:48,498 - INFO - Starting the extract stage
+2025-01-17 08:45:48,498 - INFO - Validating input JSON structure.
+2025-01-17 08:45:48,498 - INFO - Validation successful for context_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path: ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-17 08:45:48,498 - INFO - Validated paths: context_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, results_path=./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/out/
+2025-01-17 08:45:48,499 - ERROR - Expected exactly 2 files in ./tests/f3324a99-8a63-4ada-9d1d-562f84c76362/, but found 1.
+2025-01-17 08:45:48,499 - ERROR - Exiting the pipeline due to validation error

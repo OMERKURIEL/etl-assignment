@@ -178,6 +178,10 @@ def process_txt_files(txt_file_path):
     with open(txt_file_path, 'r') as file: # remove trailing and leading blanks
         sequences = [line.strip() for line in file if line.strip()]
 
+    if not sequences:
+        logging.error(f"Validation Error: TXT file {txt_file_path} is empty.")
+        raise ValueError(f"TXT file {txt_file_path} is empty.")
+
     logging.debug(f"Read {len(sequences)} sequences from {txt_file_path}")
 
     # Use multiprocessing to process sequences in parallel

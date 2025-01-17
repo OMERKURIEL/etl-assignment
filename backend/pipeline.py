@@ -69,16 +69,21 @@ def transform(participant_files):
             sys.exit(1)  # Exit if the processing fails
 
         logging.debug(f"Processed JSON results: {json_result}")
-        logging.info("Transform stage completed successfully.")
 
     except ValueError:
         logging.error("Exiting the pipeline due to validation error")
         sys.exit(1)
 
     # Process the .txt file
-    txt_results = txt.process_txt_files(participant_files[".txt"])
-    logging.debug(f"Processed TXT results: {txt_results}")
+    try:
+        txt_results = txt.process_txt_files(participant_files[".txt"])
+        logging.debug(f"Processed TXT results: {txt_results}")
 
+    except ValueError:
+        logging.error("Exiting the pipeline due to validation error")
+        sys.exit(1)
+
+    logging.info("Transform stage completed successfully.")
     return txt_results, json_result
 
 
@@ -104,7 +109,7 @@ def load(context_path, results_path, txt_results, json_result, participant_files
     merged_results = {
         "metadata": {
             "start_at": start_time.isoformat(),
-            "end_at": datetime.now().isoformat(), # I need to change this
+            "end_at": datetime.now().isoformat(),
             "context_path": context_path,
             "results_path": results_path
         },
@@ -133,7 +138,7 @@ def load(context_path, results_path, txt_results, json_result, participant_files
 def main():
     try:
         logging.info("ETL pipeline started.")
-        start_time = datetime.now()
+        start_at = datetime.now()
         # Check if the input JSON file is provided as a command-line argument
         if len(sys.argv) < 2:
             logging.error("Input JSON file is required as an argument.")
@@ -145,7 +150,7 @@ def main():
         # Transform Stage
         txt_results, json_result = transform(participant_files)
         # Load stage
-        load(context_path, results_path, txt_results, json_result, participant_files, start_time)
+        load(context_path, results_path, txt_results, json_result, participant_files, start_at)
 
         logging.info("ETL pipeline completed successfully.")
 

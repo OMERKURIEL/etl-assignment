@@ -22,10 +22,11 @@ function App() {
     }, []);
 
     // Handle multiple file selection
-const handleFileChange = (e) => {
-  const files = Array.from(e.target.selectedOptions).map(option => option.value);
-  setSelectedFiles(files);
-};
+    const handleFileChange = (e) => {
+        // Extract values from selected options
+        const selectedOptions = Array.from(e.target.selectedOptions).map(option => option.value);
+        setSelectedFiles(selectedOptions);
+    };
 
     // Run ETL pipeline for selected files
     const runPipeline = async () => {
@@ -56,7 +57,12 @@ const handleFileChange = (e) => {
             <main className="content">
                 <div className="upload-section">
                     <label>Select files:</label>
-                    <select multiple={true} value={selectedFiles} onChange={handleFileChange} size="5">
+                    <select
+                        multiple={true}
+                        value={selectedFiles}
+                        onChange={handleFileChange}
+                        size="5"
+                    >
                         {files.map((file, index) => (
                             <option key={index} value={file}>
                                 {file}
@@ -67,19 +73,19 @@ const handleFileChange = (e) => {
                 </div>
 
                 <div className="results-section">
-                    <h2>Pipeline Logs</h2>
-                    {Object.entries(logs).map(([file, log]) => (
-                        <div key={file}>
-                            <h3>{file}</h3>
-                            <pre>{log}</pre>
-                        </div>
-                    ))}
-
                     <h2>Pipeline Results</h2>
                     {Object.entries(results).map(([file, result]) => (
                         <div key={file}>
                             <h3>{file}</h3>
                             <pre>{JSON.stringify(result, null, 2)}</pre>
+                        </div>
+                    ))}
+
+                    <h2>Pipeline Logs</h2>
+                    {Object.entries(logs).map(([file, log]) => (
+                        <div key={file}>
+                            <h3>{file}</h3>
+                            <pre>{log}</pre>
                         </div>
                     ))}
                 </div>
