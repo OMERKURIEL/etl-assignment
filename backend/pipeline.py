@@ -2,17 +2,20 @@ import os
 import json
 from etl import validate_and_process_json as json_validate, input_handler as input_handler, process_txt as txt
 from datetime import datetime
-
-# Configure logging
 import logging
 import sys
+
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+LOG_DIR = os.path.join(BASE_DIR, "tests")
+LOG_FILE = os.path.join(LOG_DIR, "etl_pipeline.log")
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("backend/tests/etl_pipeline.log"),  # Save logs to a file
-        logging.StreamHandler()     # Also print logs to console
+        logging.FileHandler(LOG_FILE),
+        logging.StreamHandler()
     ]
 )
 

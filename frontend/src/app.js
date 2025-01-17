@@ -22,29 +22,28 @@ function App() {
     }, []);
 
     // Handle multiple file selection
-    const handleFileChange = (e) => {
-        // Extract values from selected options
-        const selectedOptions = Array.from(e.target.selectedOptions).map(option => option.value);
-        setSelectedFiles(selectedOptions);
-    };
+function handleFileChange(e) {
+    const selectedOptions = Array.from(e.target.selectedOptions).map(option => option.value);
+    setSelectedFiles(selectedOptions);
+}
 
     // Run ETL pipeline for selected files
-    const runPipeline = async () => {
-        if (selectedFiles.length === 0) {
-            alert("Please select at least one file.");
-            return;
-        }
+const runPipeline = async () => {
+    if (selectedFiles.length === 0) {
+        alert("Please select at least one file.");
+        return;
+    }
 
-        const response = await fetch("http://127.0.0.1:5001/run-pipeline", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ input_files: selectedFiles }),
-        });
+    const response = await fetch("http://127.0.0.1:5001/run-pipeline", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ input_files: selectedFiles }),  // ✅ Only filenames, not paths
+    });
 
-        const data = await response.json();
-        setLogs(data.logs || {});
-        setResults(data.results || {});
-    };
+    const data = await response.json();
+    setLogs(data.logs || {});
+    setResults(data.results || {});
+};
 
     return (
         <div className="app-container">

@@ -83,7 +83,7 @@ This will validate, transform, and load genomic data from the input file.
 4. Navigate to the backend folder `cd ../backend`
 5. Start the backend development server `python app.py`
 
-The interface should now be accessible at http://localhost:8080
+The interface should now be accessible at http://localhost:3000
 
 
 
