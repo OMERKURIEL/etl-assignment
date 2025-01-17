@@ -11,12 +11,10 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("tests/etl_pipeline.log"),  # Save logs to a file
+        logging.FileHandler("backend/tests/etl_pipeline.log"),  # Save logs to a file
         logging.StreamHandler()     # Also print logs to console
     ]
-
 )
-
 
 def extract(input_json):
     """
@@ -136,6 +134,16 @@ def load(context_path, results_path, txt_results, json_result, participant_files
 
 
 def main():
+    """
+    Main function to execute the ETL pipeline.
+
+    This function follows the Extract, Transform, and Load (ETL) process:
+    1. Extract: Reads and validates input JSON data.
+    2. Transform: Processes the extracted data, ensuring correct format and structure.
+    3. Load: Saves the processed results to the specified output directory.
+
+    Logs the start and end times of execution and handles errors gracefully.
+    """
     try:
         logging.info("ETL pipeline started.")
         start_at = datetime.now()
@@ -144,7 +152,7 @@ def main():
             logging.error("Input JSON file is required as an argument.")
             raise ValueError("Input JSON file is required as an argument.")
 
-        input_json = sys.argv[1]
+        input_json = sys.argv[1] # extracting the .json file input
         # Validate that the provided file exists
         context_path, results_path, participant_files = extract(input_json)
         # Transform Stage

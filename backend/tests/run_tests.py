@@ -6,7 +6,7 @@ import json
 # Helper function to run the ETL pipeline
 def run_pipeline(input_file):
     """Run the ETL pipeline and return the process result."""
-    result = subprocess.run(["python", "pipeline.py", input_file], capture_output=True, text=True)
+    result = subprocess.run(["python", "backend/pipeline.py", input_file], capture_output=True, text=True)
     return result
 
 @pytest.mark.parametrize("test_input,expected_error", [
@@ -46,7 +46,7 @@ def test_valid_input():
     """
     input_file = "inputs/valid_input.json"
     result = subprocess.run(
-        ["python", "pipeline.py", input_file],
+        ["python", "backend/pipeline.py", input_file],
         capture_output=True,
         text=True
     )

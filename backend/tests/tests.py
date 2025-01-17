@@ -6,7 +6,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("tests/etl_pipeline.log"),  # Save logs to a file
+        logging.FileHandler("backend/tests/etl_pipeline.log"),  # Save logs to a file
         logging.StreamHandler() # Also print logs to console
     ]
 )
@@ -31,7 +31,7 @@ test_cases = [
 for test in test_cases:
     logging.info(f"Running Test: {test['name']}")
     result = subprocess.run(
-        ["python", "pipeline.py", test["input_file"]],
+        ["python", "backend/pipeline.py", test["input_file"]],
         capture_output=True,
         text=True
     )

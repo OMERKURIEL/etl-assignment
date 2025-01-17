@@ -62,7 +62,13 @@ def compute_most_frequent_codon(sequences):
 
 
 def find_lcs_pair(seq1, seq2):
-    """Find the longest common subsequence between two sequences."""
+    """
+    Find the longest common subsequence (LCS) between two DNA sequences.
+
+    :param seq1: First DNA sequence.
+    :param seq2: Second DNA sequence.
+    :return: The longest common subsequence.
+    """
     m, n = len(seq1), len(seq2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
 
@@ -92,8 +98,11 @@ def find_lcs_pair(seq1, seq2):
 
 def compute_longest_common_subsequence(sequences):
     """
-    Find the longest common subsequence among all possible combinations of sequences.
-    Returns a dictionary containing the LCS value, list of sequence indices, and length of the lcs.
+    Find the longest common subsequence among all possible pairs combinations of sequences.
+    This is because the LCS is necessarily a common LCS to at least two sequences.
+
+    :param sequences: A list of strings, each representing a DNA sequence.
+    :return: a dictionary containing the LCS value, list of sequence indices, and length of the lcs.
     """
     if not sequences:
         return {"value": "", "sequences": [], "length": 0}
@@ -102,7 +111,7 @@ def compute_longest_common_subsequence(sequences):
     max_indices = []
     max_sequence_count = 0
 
-    # Try all possible combinations of sequences
+    # Try all possible pair combinations of sequences
     for subset_size in range(2,3):
         for combo in combinations(range(len(sequences)), subset_size):
             # Find LCS for current combination

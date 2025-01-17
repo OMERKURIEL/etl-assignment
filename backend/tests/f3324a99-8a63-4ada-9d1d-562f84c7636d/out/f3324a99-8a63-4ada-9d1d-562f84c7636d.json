@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "start_at": "2025-01-17T08:45:48.371367",
-        "end_at": "2025-01-17T08:45:48.465898",
-        "context_path": "./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/",
-        "results_path": "./tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/"
+        "start_at": "2025-01-17T11:56:22.163142",
+        "end_at": "2025-01-17T11:56:22.227831",
+        "context_path": "backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/",
+        "results_path": "backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636d/out/"
     },
     "results": [
         {

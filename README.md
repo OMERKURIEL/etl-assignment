@@ -1,7 +1,7 @@
 # **ETL Pipeline for Genomic Data Processing**
 
 This project is an ETL (Extract, Transform, Load) pipeline designed for processing genomic data. 
-The pipeline performs data validation, transformation, and extraction from structured .json and .txt files. 
+The pipeline performs data extraction, validation, and transformation from structured .json and .txt files, and loads it to a path given as an argument.
 Additionally, a bonus frontend interface is included for easy interaction, though the core logic resides in the backend processing.
 
 ## Project Structure:
@@ -25,6 +25,15 @@ home_assignment/
 │── requirements.txt                # Python dependencies
 │── README.md                       # Documentation (this file)
 ```
+### Overview:
+The pipeline.py orchestrate the ETL process, calling 3 methods - extract, transform, load. 
+- Extract method: calls 2 method in the input_handler.py validating the input .json file
+- Transform method: calls 2 methods:
+  - validate_and_process_json_files
+  - process_txt_files
+- Load method:
+  - merging the processes files into a .json file, creating the output directory if it doesn't exist and loading the file to the directory.
+    
 
 
 ## Installation & Setup:
@@ -40,27 +49,27 @@ Follow these steps to set up the backend ETL pipeline and the optional frontend 
 
 #### **Installation**:
 - Clone the repository:
-    git clone https://github.com/your-repo/home_assignment.git
+    git clone https://github.com/OMERKURIEL/etl-assignment.git
     cd home_assignment
 - Create a virtual environment and activate it:
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    `python -m venv venv`
+    `source venv/bin/activate`  # On Windows: venv\Scripts\activate
 - Install dependencies:
-    pip install -r requirements.txt
+    `pip install -r requirements.txt`
 
 #### Running the ETL Pipeline:
 
 - To process an input file manually:
-
-    `python backend/pipeline.py inputs/valid_input.json`
+- from the home_assignment directory run:
+    `python pipeline.py ../inputs/valid_input.json`
 
 This will validate, transform, and load genomic data from the input file.
 
 ##### Running tests:
-- Run unit tests for input validation and ETL logic:
+- from the home_assignment directory, run unit tests for input validation and ETL logic:
 
-    `pytest backend/tests/`
-    `python tests/run_tests`
+    `pytest backend/tests/run_tests.py`
+    `python backend/tests/tests.py`
 ### (Optional) Frontend Setup:
 #### Prerequisites
 
