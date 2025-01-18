@@ -6,7 +6,7 @@ Additionally, a bonus frontend interface is included for easy interaction, thoug
 
 ## Project Structure:
 ```plaintext
-home_assignment/
+etl-assignment/
 │── backend/                       # Backend ETL pipeline (core logic)
 │   │── pipeline.py                 # Main ETL execution script
 │   │── etl/                       # ETL processing modules
