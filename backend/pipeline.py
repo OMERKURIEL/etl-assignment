@@ -28,17 +28,21 @@ def extract(input_json):
     try:
         logging.info("Starting the extract stage")
 
-        # Raise an error if the input file doesn't exist
+        # raise an error if the input file doesn't exist
         if not os.path.exists(input_json):
             logging.error(f"Input file not found: {input_json}")
             raise FileNotFoundError(f"Input file does not exist: {input_json}")
 
-        # Load and parse the JSON file
+        if not input_json.lower().endswith('.json'):
+            logging.error(f"Input file is not a .JSON file: {input_json}")
+            raise ValueError(f"Input file is not a .JSON file: {input_json}")
+
+        # load and parse the JSON file
         with open(input_json, 'r') as file:
             input_data = json.load(file)
             logging.debug(f"Loaded input JSON: {input_data}")
 
-        # Validate and load input paths
+        # validate and load input paths
         context_path, results_path = input_handler.validate_input_file(input_data)
         logging.info(f"Validated paths: context_path={context_path}, results_path={results_path}")
 
@@ -61,7 +65,7 @@ def transform(participant_files):
     :return: txt_results, json_result.
     """
     logging.info("Starting the Transform stage.")
-    # Validate and process the content of the .json file
+    # validate and process the content of the .json file
     try:
         json_result = json_validate.process_json_files(participant_files[".json"])
         if json_result is None:
@@ -74,7 +78,7 @@ def transform(participant_files):
         logging.error("Exiting the pipeline due to validation error")
         sys.exit(1)
 
-    # Process the .txt file
+    # process the .txt file
     try:
         txt_results = txt.process_txt_files(participant_files[".txt"])
         logging.debug(f"Processed TXT results: {txt_results}")
@@ -100,12 +104,12 @@ def load(context_path, results_path, txt_results, json_result, participant_files
     """
     logging.info("Starting the Load stage.")
 
-    # Extract the participant ID from the file name
+    # extract the participant ID from the file name
     participant_id = os.path.splitext(os.path.basename(participant_files[".txt"]))[0]
     if participant_id.endswith("_dna"):
         participant_id = participant_id[:-4]
 
-    # Merge the results
+    # merge the results
     merged_results = {
         "metadata": {
             "start_at": start_time.isoformat(),
@@ -149,17 +153,17 @@ def main():
     try:
         logging.info("ETL pipeline started.")
         start_at = datetime.now()
-        # Check if the input JSON file is provided as a command-line argument
+        # check if the input JSON file is provided as a command-line argument
         if len(sys.argv) < 2:
             logging.error("Input JSON file is required as an argument.")
             raise ValueError("Input JSON file is required as an argument.")
 
         input_json = sys.argv[1] # extracting the .json file input
-        # Validate that the provided file exists
+        # validate that the provided file exists
         context_path, results_path, participant_files = extract(input_json)
-        # Transform Stage
+        # transform Stage
         txt_results, json_result = transform(participant_files)
-        # Load stage
+        # load stage
         load(context_path, results_path, txt_results, json_result, participant_files, start_at)
 
         logging.info("ETL pipeline completed successfully.")
