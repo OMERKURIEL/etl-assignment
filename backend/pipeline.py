@@ -5,7 +5,6 @@ from datetime import datetime
 import logging
 import sys
 
-
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 LOG_DIR = os.path.join(BASE_DIR, "tests")
 LOG_FILE = os.path.join(LOG_DIR, "etl_pipeline.log")
@@ -44,7 +43,7 @@ def extract(input_json):
         logging.info(f"Validated paths: context_path={context_path}, results_path={results_path}")
 
         # validate the files existence, format, naming in the context path
-        participant_files = input_handler.validate_context_path_files(context_path, results_path)
+        participant_files = input_handler.validate_context_path_files(context_path)
         logging.info(f"Validated participant files: {participant_files}")
     except ValueError:
         logging.error("Exiting the pipeline due to validation error")
@@ -126,7 +125,7 @@ def load(context_path, results_path, txt_results, json_result, participant_files
     }
     # if the results path doesn't exist, create it
     if not os.path.exists(results_path):
-        logging.info(f"creating results directory at {results_path}")
+        logging.info(f"Creating results directory at {results_path}")
         os.makedirs(results_path)
     # write the merged result into a file in the results_path
     output_file_path = os.path.join(results_path, f"{participant_id}.json")

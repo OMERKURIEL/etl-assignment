@@ -1,8 +1,6 @@
-from collections import defaultdict
 from multiprocessing import Pool, cpu_count
 from itertools import combinations
 import logging
-
 
 def calc_gc_content(sequence):
     """
@@ -43,7 +41,7 @@ def compute_codon_frequency(sequence):
 
 def compute_most_frequent_codon(sequences):
     """
-    Compute the most frequent codon across multiple DNA sequences.
+    Compute the most frequent codon across the DNA sequences.
 
     :param sequences: A list of strings, each representing a DNA sequence.
     :return: The most frequent codon as a string.
@@ -58,95 +56,115 @@ def compute_most_frequent_codon(sequences):
                 total_codon_count[codon] += count
             else:
                 total_codon_count[codon] = count
-    most_frequent_codon = max(total_codon_count, key=total_codon_count.get)
-    return most_frequent_codon
+    # compute the frequency of the most common codon
+    max_frequency = max(total_codon_count.values())
+    # in case of more than one most frequent codon, find all of them
+    most_frequent_codons = [
+        codon for codon, count in total_codon_count.items()
+        if count == max_frequency
+    ]
+    # join the results to the expected format
+    results = ", ".join(most_frequent_codons)
+    logging.debug(f"most frequent codon: {most_frequent_codons}.")
+    return results
 
 
-def find_lcs_pair(sequence1, sequence2):
+def find_lcs_of_two(sequence1, sequence2):
     """
-    Find the longest common subsequence (LCS) between a pair of DNA sequences.
+    Helper function - Find the longest common contiguous substring between two sequences.
 
-    :param sequence1: First DNA sequence.
-    :param sequence2: Second DNA sequence.
-    :return: The longest common subsequence.
+    :param sequence1: A string representing the first DNA sequence.
+    :param sequence2: A string representing the second DNA sequence.
     """
-    m, n = len(sequence1), len(sequence2)
-    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    n, m = len(sequence1), len(sequence2)
+    longest_sub = ""
+    # Try all possible starting positions in sequence1
+    for i in range(n):
+        # For each starting position, try increasing lengths
+        for length in range(1, n - i + 1):
+            current_sub = sequence1[i:i + length]
+            # If this substring appears in sequence2 and is longer than current best, replace it
+            if current_sub in sequence2 and len(current_sub) > len(longest_sub):
+                longest_sub = current_sub
+    return longest_sub
 
-    for i in range(1, m + 1):
-        for j in range(1, n + 1):
-            if sequence1[i - 1] == sequence2[j - 1]:
-                dp[i][j] = dp[i - 1][j - 1] + 1
-            else:
-                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
-
-    # Backtrack to find the actual subsequence
-    lcs = []
-    i, j = m, n
-    while i > 0 and j > 0:
-        if sequence1[i - 1] == sequence2[j - 1]:
-            lcs.append(sequence1[i - 1])
-            i -= 1
-            j -= 1
-        elif dp[i - 1][j] > dp[i][j - 1]:
-            i -= 1
-        else:
-            j -= 1
-
-    return ''.join(reversed(lcs))
 
 def process_lcs_pair(pair):
-    """Helper function for multiprocessing: Compute LCS for a sequence pair."""
-    seq1, seq2 = pair
-    return find_lcs_pair(seq1, seq2)
+    """
+    Helper function for multiprocessing: Compute LCS for a sequence pair.
 
+    :param pair: A pair of strings representing the DNA sequences.
+    :return: A string representing the LCS of the pair.
+    """
+    seq1, seq2 = pair
+    lcs = find_lcs_of_two(seq1, seq2)
+    return lcs
 
 def compute_longest_common_subsequence(sequences):
     """
-    Find the longest common subsequence among all possible pairs combinations of sequences.
-    This search is among pairs since the LCS is necessarily a common LCS to at least two sequences.
+    Compute the longest frequent codon across the DNA sequences.
+    The longest common subsequence is defined as the longest common subsequence of any sequence combination.
+    (not necessarily common to all sequences).
+
     :param sequences: A list of strings, each representing a DNA sequence.
-    :return: a dictionary containing the LCS value, list of sequence indices, and length of the lcs.
+    :return: The most frequent codon as a string.
     """
     if not sequences:
         return {"value": "", "sequences": [], "length": 0}
 
-    # Initialize a dictionary to count occurrences of each LCS
-    lcs_counts = defaultdict(int)
-
-    # Generate LCS for all possible pairs of sequences
+    # Generate all possible sequence pairs with their indices, and Use multiprocessing for efficiency
     sequence_pairs = [(sequences[i], sequences[j]) for i, j in combinations(range(len(sequences)), 2)]
-
-    # Use multiprocessing to process sequence pairs in parallel
     with Pool(processes=cpu_count()) as pool:
         lcs_results = pool.map(process_lcs_pair, sequence_pairs)
 
-    # Count LCS occurrences
-    for lcs in lcs_results:
-        if lcs:
-            lcs_counts[lcs] += 1
+    # Track all candidates of maximum length
+    max_length = 0
+    candidates = []
 
-    if not lcs_counts:
+    # find the maximum length from the subsequences found
+    for lcs in lcs_results:
+        if lcs and len(lcs) >= max_length:
+            if len(lcs) > max_length:
+                max_length = len(lcs)
+                candidates = [] # longer subsequence found, reset the candidates list
+            candidates.append(lcs)
+
+    candidates = list(dict.fromkeys(candidates)) # Remove duplicates
+
+    # If no common substrings found
+    if not candidates:
         return {"value": "", "sequences": [], "length": 0}
 
-    # Find the longest LCS first
-    max_length = max(len(lcs) for lcs in lcs_counts)
+    max_occurrences = 0
+    best_results = {}  # store all lcs that have the same length and frequency
 
-    # construct a list of all the LCS, If multiple LCSs of the same length exist, choose the most frequent one
-    longest_lcs_candidates = [lcs for lcs in lcs_counts if len(lcs) == max_length]
-    best_lcs = max(longest_lcs_candidates, key=lambda x: lcs_counts[x])
+    # For each candidate, find all sequences it appears in
+    for candidate in candidates:
+        sequence_indices = [i + 1 for i, seq in enumerate(sequences) if candidate in seq]
+        current_occurrences = len(sequence_indices)
 
-    # Find sequences where this LCS appears
-    sequence_indices = [idx + 1 for idx, sequence in enumerate(sequences) if best_lcs in sequence]
+        if current_occurrences >= max_occurrences:
+            if current_occurrences > max_occurrences: # New maximum found, reset candidates dict
+                max_occurrences = current_occurrences
+                best_results = {}
 
-    return {
-        "value": best_lcs,
-        "sequences": sequence_indices,
-        "length": len(best_lcs)
-    }
+            # Add this candidate's complete result
+            best_results[candidate] = {
+                "value": candidate,
+                "sequences": sequence_indices,
+                "length": len(candidate)
+            }
+    # If only one candidate, return it directly
+    if len(best_results) == 1:
+        return next(iter(best_results.values()))
+
+    # If multiple candidates, return dictionary of all results
+    return best_results
+
 
 def process_sequence(sequence):
     """
+    Helper function for multiprocessing:
     Process a single DNA sequence to calculate its GC content and codon frequency.
 
     :param sequence: A string representing the DNA sequence.

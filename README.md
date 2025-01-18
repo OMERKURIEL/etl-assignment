@@ -67,7 +67,7 @@ Follow these steps to set up the backend ETL pipeline and the optional frontend 
 This will validate, transform, and load genomic data from the input file.
 
 ##### Running tests:
-- from the etl-_assignment directory, run unit tests for input validation and ETL logic:
+- from the etl-assignment directory, run unit tests for input validation and ETL logic:
 
     `pytest backend/tests/run_tests.py`
     `python backend/tests/tests.py`

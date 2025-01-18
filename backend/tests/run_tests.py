@@ -1,9 +1,11 @@
+
 import pytest
 import subprocess
 import os
 import json
 
-# Helper function to run the ETL pipeline
+
+
 def run_pipeline(input_file):
     """Run the ETL pipeline and return the process result."""
     result = subprocess.run(["python", "backend/pipeline.py", input_file], capture_output=True, text=True)
@@ -17,11 +19,13 @@ def run_pipeline(input_file):
     ("missing_file_input.json", "Expected exactly 2 files in"),
     ("missing_context_path_input.json", "Invalid or missing context path"),
     ("extra_files_input.json", "Expected exactly 2 files in"),
-    ("results_path_doesnt_end_with_out.json", "Results path does not end with '/out/'"),
-    ("paths_doesnt_have_common_uuid.json", f"Context path and results path must share the same base directory"),
+    ("results_path_doesnt_end_with_out.json", "Results path backend/tests/f3324a99-8a63-4ada-9d1d-562f84c76365/res/ does not end with '/out/'"),
+    ("paths_doesnt_have_common_uuid.json", "Context path backend/tests/f3324a99-8a63-4ada-9d1d-562f84c76364/ and results path backend/tests/f3324a99-8a63-4ada-9d1d-562f84c76365/out/ must share the same base directory"),
     ("missing_results_path_input.json", "Results path is not specified."),
     ("files_with_incorrect_extension.json", "File f3324a99-8a63-4ada-9d1d-562f84c76311_dna.js does not end with '.txt' or '.json'."),
-    ("wrong_naming_convention.json", "Invalid file naming format: f3324a99-8a63-4ada-9d1d-562f84c76312.json")
+    ("wrong_naming_convention.json", "Invalid file naming format: f3324a99-8a63-4ada-9d1d-562f84c76312.json"),
+    ("context_path_uuid_is_not_as_files_uuid.json", "Context path UUID (f3324a99-8a63-4ada-9d1d-562f84c76315) and participant ID (f3324a99-8a63-4ada-9d1d-562f84c7636d) do not match."),
+    ("files_doesnt_have_common_uuid.json", "Files in backend/tests/f3324a99-8a63-4ada-9d1d-562f84c76314/ do not share the same participant ID.")
 
 ])
 def test_pipeline_edge_cases(test_input, expected_error):
@@ -62,7 +66,7 @@ def test_valid_input():
 
     assert os.path.exists(output_file), f"Expected results file not found at {output_file}"
 
-    # Verify the content of the results file
+    # verify the content of the results file
     with open(output_file, 'r') as output_f:
         results_data = json.load(output_f)
         assert results_data["metadata"]["context_path"] == input_data["context_path"], "Context path mismatch in output"
