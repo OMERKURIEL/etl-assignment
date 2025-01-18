@@ -50,20 +50,20 @@ Follow these steps to set up the backend ETL pipeline and the optional frontend 
 #### **Installation**:
 - Clone the repository:
 ```plaintext
-    `git clone https://github.com/OMERKURIEL/etl-assignment.git`
+git clone https://github.com/OMERKURIEL/etl-assignment.git
 ```
 - Move to the cloned directory:
 ```plaintext
-   `cd etl-assignment`
+cd etl-assignment
 ```
 - Create a virtual environment and activate it:
 ```plaintext
-    `python -m venv venv`
-    `source venv/bin/activate`  # On Windows: venv\Scripts\activate
+python -m venv venv
+source venv/bin/activate`  # On Windows: venv\Scripts\activate
 ```
 - Install dependencies:
 ```plaintext
-    `pip install -r requirements.txt`
+pip install -r requirements.txt
 ```
 
 #### Running the ETL Pipeline:
@@ -71,7 +71,7 @@ Follow these steps to set up the backend ETL pipeline and the optional frontend 
 - To process an input file manually:
 - from the etl-assignment directory run:
 ```plaintext
-    `python backend/pipeline.py inputs/valid_input.json`
+python backend/pipeline.py inputs/valid_input.json
 ```
 
 This will validate, transform, and load genomic data from the input file. 
@@ -80,8 +80,8 @@ you can see the result in backend/tests/f3324a99-8a63-4ada-9d1d-562f84c7636c/out
 ##### Running tests:
 - from the etl-assignment directory, run unit tests for input validation and ETL logic:
 ```plaintext
-    `pytest backend/tests/run_tests.py`
-    `python backend/tests/tests.py`
+pytest backend/tests/run_tests.py
+python backend/tests/tests.py
 ```
 
 Inside inputs directory are the input Json files with descriptive names on each edge case being tested by the two testing scripts.
@@ -94,20 +94,20 @@ Inside inputs directory are the input Json files with descriptive names on each 
 ##### **Installation & Running the UI**:
 1. nNavigate to the frontend folder 
 ```plaintext
-`cd frontend`
+cd frontend
 ```
 2. Install dependencies 
 ```plaintext
-`npm install`
+npm install
 ```
 3. Start the frontend development server:
 ```plaintext
-`npm start`
+npm start
 ```
 4. In an additional terminal, Navigate to the backend folder 
 5. Start the backend development server
 ```plaintetx
-`python app.py`
+python app.py
 ```
 
 The interface should now be accessible at http://localhost:3000
