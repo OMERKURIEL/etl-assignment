@@ -71,7 +71,6 @@ def validate_context_path_files(context_path):
         logging.error(f"Expected exactly 2 files in {context_path}, but found {len(files)}.")
         raise ValueError(f"Expected exactly 2 files in {context_path}, but found {len(files)}.")
 
-
     for file in files:
         # validate file extension
         if not file.endswith(('.txt', '.json')):
