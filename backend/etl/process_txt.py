@@ -49,7 +49,7 @@ def compute_most_frequent_codon(sequences):
     logging.debug("Computing longest common subsequence (LCS).")
     total_codon_count = {}
     for sequence in sequences:
-        # Use compute_codon_frequency to calculate frequency per sequence
+        # use compute_codon_frequency to calculate frequency per sequence
         codon_freq = compute_codon_frequency(sequence)
         for codon, count in codon_freq.items():
             if codon in total_codon_count:
@@ -78,9 +78,9 @@ def find_lcs_of_two(sequence1, sequence2):
     """
     n, m = len(sequence1), len(sequence2)
     longest_sub = ""
-    # Try all possible starting positions in sequence1
+    # try all possible starting positions in sequence1
     for i in range(n):
-        # For each starting position, try increasing lengths
+        # for each starting position, try increasing lengths
         for length in range(1, n - i + 1):
             current_sub = sequence1[i:i + length]
             # If this substring appears in sequence2 and is longer than current best, replace it
@@ -112,12 +112,12 @@ def compute_longest_common_subsequence(sequences):
     if not sequences:
         return {"value": "", "sequences": [], "length": 0}
 
-    # Generate all possible sequence pairs with their indices, and Use multiprocessing for efficiency
+    # generate all possible sequence pairs with their indices, and Use multiprocessing for efficiency
     sequence_pairs = [(sequences[i], sequences[j]) for i, j in combinations(range(len(sequences)), 2)]
     with Pool(processes=cpu_count()) as pool:
         lcs_results = pool.map(process_lcs_pair, sequence_pairs)
 
-    # Track all candidates of maximum length
+    # track all candidates of maximum length
     max_length = 0
     candidates = []
 
@@ -138,13 +138,13 @@ def compute_longest_common_subsequence(sequences):
     max_occurrences = 0
     best_results = {}  # store all lcs that have the same length and frequency
 
-    # For each candidate, find all sequences it appears in
+    # for each candidate, find all sequences it appears in
     for candidate in candidates:
         sequence_indices = [i + 1 for i, seq in enumerate(sequences) if candidate in seq]
         current_occurrences = len(sequence_indices)
 
         if current_occurrences >= max_occurrences:
-            if current_occurrences > max_occurrences: # New maximum found, reset candidates dict
+            if current_occurrences > max_occurrences: # new maximum found, reset candidates dict
                 max_occurrences = current_occurrences
                 best_results = {}
 
@@ -154,11 +154,11 @@ def compute_longest_common_subsequence(sequences):
                 "sequences": sequence_indices,
                 "length": len(candidate)
             }
-    # If only one candidate, return it directly
+    # if only one candidate, return it directly
     if len(best_results) == 1:
         return next(iter(best_results.values()))
 
-    # If multiple candidates, return dictionary of all results
+    # if multiple candidates, return dictionary of all results
     return best_results
 
 
@@ -195,7 +195,7 @@ def process_txt_files(txt_file_path):
 
     logging.debug(f"Read {len(sequences)} sequences from {txt_file_path}")
 
-    # Use multiprocessing to process sequences in parallel
+    # use multiprocessing to process sequences in parallel
     with Pool(processes=cpu_count()) as pool:
         sequences_results = pool.map(process_sequence, sequences)
 

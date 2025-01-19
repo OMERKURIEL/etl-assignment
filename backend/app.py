@@ -6,9 +6,9 @@ import os
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))  # backend/
-ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))  # home_assignment/
-TESTS_DIRECTORY = os.path.join(ROOT_DIR, "inputs")  # home_assignment/inputs/
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
+TESTS_DIRECTORY = os.path.join(ROOT_DIR, "inputs")
 
 @app.route("/list-files", methods=["GET"])
 def list_files():
